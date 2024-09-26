@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.css'
 })
 export class FooterComponent {
-
+  year: number = 2024;
+  name: string = "Dário Jorge";
+  disclaimer: string = "All content and trademarks property of their respective owners.";
 }

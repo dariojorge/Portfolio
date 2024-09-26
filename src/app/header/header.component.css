@@ -1,0 +1,29 @@
+.header-title {
+    flex: none;
+}
+
+.header-wrapper {
+    --bs-gutter-x: 1.5rem;
+    padding-left: calc(var(--bs-gutter-x)* .5);
+}
+
+.display-block {
+    display: block;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+
+@media (min-width: 576px) {
+    
+}

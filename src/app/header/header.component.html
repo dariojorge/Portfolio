@@ -1,21 +1,36 @@
 <header>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-expand-sm navbar-light bg-white fixed-top display-block">
+        <div class="header-wrapper header-title">
+            <h2>Dário Jorge</h2>
+            <h3>Programmer</h3>
+        </div>
         <div class="container-fluid">
-            <button class="navbar-toggler" type="button"
-                aria-controls="fixedNavbarExample" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
-            <div mdbCollapse class="collapse navbar-collapse" id="fixedNavbar">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <div id="navBar">
+                <ul class="navbar-nav me-auto flex-row">
                     <li class="nav-item active">
                         <a class="nav-link" aria-current="page" href="#">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#">Projects</a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li *ngFor="let project of projects;">
+                                <a class="dropdown-item" href="#">{{ project }}</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Personal Projects
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li *ngFor="let personalProject of personalProjects;">
+                                <a class="dropdown-item" href="#">{{ personalProject }}</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="#">Resume</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">About</a>
@@ -24,13 +39,4 @@
             </div>
         </div>
     </nav>
-    <!-- Navbar -->
-
-    <!-- Jumbotron -->
-    <div class="p-5 text-center bg-light" style="margin-top: 58px;">
-        <h1 class="mb-3">Heading</h1>
-        <h4 class="mb-3">Subheading</h4>
-        <a class="btn btn-primary" href="" role="button">Call to action</a>
-    </div>
-    <!-- Jumbotron -->
 </header>
