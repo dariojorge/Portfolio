@@ -29,7 +29,6 @@ export class HeaderComponent {
 
   ngAfterViewInit() {
     this.setUpResizeObserver();
-    Promise.resolve().then(() => this.sharedDataService.headerSize.next(this.elementView!.nativeElement.offsetHeight));
   }
 
   setUpResizeObserver(): void {
@@ -42,6 +41,6 @@ export class HeaderComponent {
 
   useNewSizes() {
     const element = this.elementView?.nativeElement;
-    Promise.resolve().then(() => this.sharedDataService.headerSize.next(element.offsetHeight));
+    this.sharedDataService.headerSize.next(element.offsetHeight)
   }
 }
