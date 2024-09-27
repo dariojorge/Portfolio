@@ -8,10 +8,10 @@ import { Project1Component } from './projects/project1/project1.component';
 
 const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
-    { path: 'Portfolio/home', component: HomeComponent },
-    { path: 'Portfolio/resume', component: ResumeComponent },
-    { path: 'Portfolio/about', component: AboutComponent },
-    { path: 'Portfolio/project/project1', component: Project1Component }
+    { path: '/home', component: HomeComponent },
+    { path: '/resume', component: ResumeComponent },
+    { path: '/about', component: AboutComponent },
+    { path: '/project/project1', component: Project1Component }
 ];
 
 @NgModule({
