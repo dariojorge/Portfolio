@@ -29,13 +29,11 @@ p {
     top: 0;
     left: 0;
     right: 0;
-    height: 60px;
     display: flex;
     align-items: center;
     background-color: #1976d2;
     color: white;
     font-weight: 600;
-    margin-top: 9%;
 }
 
 .toolbar img {
@@ -64,7 +62,7 @@ p {
     max-width: 960px;
     flex-direction: column;
     align-items: center;
-    margin-top: 14%;
+    padding-top: -webkit-calc(100% - 50%);
 }
 
 svg.material-icons {

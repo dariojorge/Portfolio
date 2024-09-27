@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
+import { SharedDataService } from '../services/shared-data.service';
 
 @Component({
   selector: 'app-header',
@@ -11,6 +12,10 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
   personalProjects: string[] = [];
   projects: string[] = [];
+  @ViewChild('headContainerSize') elementView?: ElementRef;
+  observer!: ResizeObserver;
+
+  constructor(private sharedDataService: SharedDataService) { }
 
   ngOnInit() {
     this.personalProjects.push("Personal Project 1");
@@ -20,5 +25,23 @@ export class HeaderComponent {
     this.projects.push("Project 1");
     this.projects.push("Project 2");
     this.projects.push("Project 3");
+  }
+
+  ngAfterViewInit() {
+    this.setUpResizeObserver();
+    Promise.resolve().then(() => this.sharedDataService.headerSize.next(this.elementView!.nativeElement.offsetHeight));
+  }
+
+  setUpResizeObserver(): void {
+    this.observer = new ResizeObserver(() => {
+      this.useNewSizes();
+    });
+
+    this.observer.observe(this.elementView?.nativeElement);
+  }
+
+  useNewSizes() {
+    const element = this.elementView?.nativeElement;
+    Promise.resolve().then(() => this.sharedDataService.headerSize.next(element.offsetHeight));
   }
 }

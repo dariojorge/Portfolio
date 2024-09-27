@@ -11,6 +11,10 @@
     border-bottom-color: teal;
 }
 
+.navbar {
+    padding-top: 0;
+}
+
 .header-bottom-background-color {
     background-color: black;
 }
