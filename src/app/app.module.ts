@@ -17,7 +17,9 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     FooterComponent,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    { provide: LocationStrategy, useClass: HashLocationStrategy }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
