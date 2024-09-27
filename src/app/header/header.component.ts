@@ -1,16 +1,15 @@
 import { CommonModule } from '@angular/common';
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, OnDestroy, ViewChild } from '@angular/core';
 import { SharedDataService } from '../services/shared-data.service';
 import { ProjectWrapperModel } from '../models/project-wrapper.model';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-header',
-  standalone: true,
-  imports: [CommonModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnDestroy{
   personalProjects: ProjectWrapperModel[] = [];
   projects: ProjectWrapperModel[] = [];
   @ViewChild('headContainerSize') elementView?: ElementRef;
@@ -42,6 +41,12 @@ export class HeaderComponent {
 
   useNewSizes() {
     const element = this.elementView?.nativeElement;
-    this.sharedDataService.headerSize.next(element.offsetHeight)
+    this.sharedDataService.headerSize.next(element.offsetHeight);
   }
+
+  ngOnDestroy(): void {
+    //this.observer.disconnect();
+    //this.sharedDataService.headerSize.unsubscribe();
+  }
+
 }

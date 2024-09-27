@@ -15,6 +15,11 @@
     padding-top: 0;
 }
 
+.navbar-nav .nav-link.active {
+    color: white;
+    background-color: grey;
+}
+
 .header-bottom-background-color {
     background-color: black;
 }
@@ -66,6 +71,7 @@
     /*Without this, clicking will make it sticky*/
     background-color: grey;
 }
+
 
 @media screen and (max-width: 580px) {
     .header-title {

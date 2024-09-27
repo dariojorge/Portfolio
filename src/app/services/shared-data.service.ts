@@ -7,6 +7,6 @@ import { BehaviorSubject } from 'rxjs';
 export class SharedDataService {
   offsetHeight: number = 100;
   headerSize: BehaviorSubject<number> = new BehaviorSubject(0);
-  
+
   constructor() { }
 }

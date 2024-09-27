@@ -24,6 +24,7 @@ export class ResumeComponent implements OnDestroy {
   }
 
   ngOnDestroy() {
-    this.sharedDataService.headerSize.unsubscribe();
+    //console.log("????////about");
+    //this.sharedDataService.headerSize.unsubscribe();
   }
 }

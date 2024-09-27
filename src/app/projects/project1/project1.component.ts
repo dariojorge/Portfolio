@@ -24,7 +24,7 @@ export class Project1Component implements OnDestroy {
   }
 
   ngOnDestroy() {
-    this.sharedDataService.headerSize.unsubscribe();
+    //this.sharedDataService.headerSize.unsubscribe();
   }
 
 }

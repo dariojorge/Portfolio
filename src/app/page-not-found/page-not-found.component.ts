@@ -1,13 +1,17 @@
 import { ChangeDetectorRef, Component, OnDestroy } from '@angular/core';
 import { SharedDataService } from '../services/shared-data.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-about',
-  templateUrl: './about.component.html',
-  styleUrl: './about.component.css'
+  selector: 'app-page-not-found',
+  standalone: true,
+  imports: [CommonModule],
+  templateUrl: './page-not-found.component.html',
+  styleUrl: './page-not-found.component.css'
 })
-export class AboutComponent implements OnDestroy {
+export class PageNotFoundComponent implements OnDestroy {
   headerSize: number = 0;
+  
 
   constructor(private sharedDataService: SharedDataService, private changeDetectorRef: ChangeDetectorRef) { }
 
@@ -21,7 +25,6 @@ export class AboutComponent implements OnDestroy {
   }
 
   ngOnDestroy() {
-    //console.log("????////about");
     //this.sharedDataService.headerSize.unsubscribe();
   }
 }

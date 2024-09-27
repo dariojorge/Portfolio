@@ -25,6 +25,6 @@ export class HomeComponent implements OnDestroy {
   }
 
   ngOnDestroy() {
-    this.sharedDataService.headerSize.unsubscribe();
+    //this.sharedDataService.headerSize.unsubscribe();
   }
 }
