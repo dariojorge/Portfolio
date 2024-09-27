@@ -1,12 +1,15 @@
-import { ChangeDetectorRef, Component, OnDestroy } from '@angular/core';
+import { ChangeDetectorRef, Component } from '@angular/core';
 import { SharedDataService } from '../services/shared-data.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-about',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'
 })
-export class AboutComponent implements OnDestroy {
+export class AboutComponent {
   headerSize: number = 0;
 
   constructor(private sharedDataService: SharedDataService, private changeDetectorRef: ChangeDetectorRef) { }
@@ -18,10 +21,5 @@ export class AboutComponent implements OnDestroy {
         this.changeDetectorRef.detectChanges();
       });
     });
-  }
-
-  ngOnDestroy() {
-    //console.log("????////about");
-    //this.sharedDataService.headerSize.unsubscribe();
   }
 }

@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectorRef, Component, OnDestroy } from '@angular/core';
+import { ChangeDetectorRef, Component } from '@angular/core';
 import { SharedDataService } from '../services/shared-data.service';
 
 @Component({
@@ -9,7 +9,7 @@ import { SharedDataService } from '../services/shared-data.service';
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent implements OnDestroy {
+export class HomeComponent {
   headerSize: number = 0;
   
 
@@ -22,9 +22,5 @@ export class HomeComponent implements OnDestroy {
         this.changeDetectorRef.detectChanges();
       });
     });
-  }
-
-  ngOnDestroy() {
-    //this.sharedDataService.headerSize.unsubscribe();
   }
 }

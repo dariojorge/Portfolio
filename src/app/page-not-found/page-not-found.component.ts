@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, Component, OnDestroy } from '@angular/core';
+import { ChangeDetectorRef, Component } from '@angular/core';
 import { SharedDataService } from '../services/shared-data.service';
 import { CommonModule } from '@angular/common';
 
@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './page-not-found.component.html',
   styleUrl: './page-not-found.component.css'
 })
-export class PageNotFoundComponent implements OnDestroy {
+export class PageNotFoundComponent {
   headerSize: number = 0;
   
 
@@ -22,9 +22,5 @@ export class PageNotFoundComponent implements OnDestroy {
         this.changeDetectorRef.detectChanges();
       });
     });
-  }
-
-  ngOnDestroy() {
-    //this.sharedDataService.headerSize.unsubscribe();
   }
 }
