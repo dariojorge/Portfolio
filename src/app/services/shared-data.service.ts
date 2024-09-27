@@ -5,6 +5,7 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class SharedDataService {
+  offsetHeight: number = 100;
   headerSize: BehaviorSubject<number> = new BehaviorSubject(0);
   
   constructor() { }

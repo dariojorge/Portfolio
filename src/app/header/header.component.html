@@ -8,29 +8,29 @@
             <div id="navBar">
                 <ul class="navbar-nav me-auto flex-row">
                     <li class="nav-item active">
-                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" aria-current="page" href="/home">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="#">Projects</a>
+                        <a class="nav-link">Projects</a>
                         <ul class="dropdown-menu dropdown-menu-color">
                             <li *ngFor="let project of projects;">
-                                <a class="dropdown-item" href="#">{{ project }}</a>
+                                <a class="dropdown-item" href="/project/{{ project.pageId }}">{{ project.title }}</a>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="#">Personal Projects</a>
+                        <a class="nav-link">Personal Projects</a>
                         <ul class="dropdown-menu dropdown-menu-color">
                             <li *ngFor="let personalProject of personalProjects;">
-                                <a class="dropdown-item" href="#">{{ personalProject }}</a>
+                                <a class="dropdown-item" href="/personalProject/{{ personalProject.pageId }}">{{ personalProject.title }}</a>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Resume</a>
+                        <a class="nav-link" href="/resume">Resume</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="/about">About</a>
                     </li>
                 </ul>
             </div>

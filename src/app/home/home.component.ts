@@ -1,25 +1,24 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectorRef, Component } from '@angular/core';
+import { ChangeDetectorRef, Component, OnDestroy } from '@angular/core';
 import { SharedDataService } from '../services/shared-data.service';
 
 @Component({
-  selector: 'app-body',
+  selector: 'app-home',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './body.component.html',
-  styleUrl: './body.component.css'
+  templateUrl: './home.component.html',
+  styleUrl: './home.component.css'
 })
-export class BodyComponent {
-  title = 'portfolio';
+export class HomeComponent implements OnDestroy {
   headerSize: number = 0;
-  offsetHeight: number = 40;
+  
 
   constructor(private sharedDataService: SharedDataService, private changeDetectorRef: ChangeDetectorRef) { }
 
   ngAfterViewInit() {
     Promise.resolve().then(() => {
       this.sharedDataService.headerSize.subscribe((size: number) => {
-        this.headerSize = size + this.offsetHeight;
+        this.headerSize = size + this.sharedDataService.offsetHeight;
         this.changeDetectorRef.detectChanges();
       });
     });
