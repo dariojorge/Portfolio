@@ -16,7 +16,7 @@
         <div class="projects-content">
             <div class="projects-content" *ngFor="let project of projects">
                 <div class="img">
-                    <img src="/assets/{{project.imgPath}}" width="800" height="300" />
+                    <img src="/assets/projects/{{project.imgPath}}" width="800" height="300" />
                 </div>
                 <p class="label">
                     {{project.title}}
@@ -31,7 +31,7 @@
         <div class="personal-projects-content">
             <div *ngFor="let personalProject of personalProjects">
                 <div class="img">
-                    <img src="/assets/{{personalProject.imgPath}}" width="275" height="275" />
+                    <img src="/assets/projects/{{personalProject.imgPath}}" width="275" height="275" />
                 </div>
             </div>
         </div>
@@ -43,7 +43,7 @@
         <div>
             <div class="other-projects-content" *ngFor="let personalProject of personalProjects">
                 <div class="img">
-                    <img src="/assets/{{personalProject.imgPath}}" width="127" height="55" />
+                    <img src="/assets/projects/{{personalProject.imgPath}}" width="127" height="55" />
                 </div>
                 <div>
                     <p>Lorem Ipsum</p>
