@@ -1,1 +1,56 @@
-<div [ngStyle]="{'padding-top': headerSize + 'px'}">HOME</div>
+<div class="content" [ngStyle]="{'padding-top': headerSize + 'px'}">
+    <section class="home-introdution">
+        <h4>Hello and welcome to my portfolio!</h4>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+    </section>
+
+    <section class="projects">
+        <span class="title">PROJECTS</span>
+        <div class="projects-content">
+            <div class="projects-content" *ngFor="let project of projects">
+                <div class="img">
+                    <img src="/assets/{{project.imgPath}}" width="800" height="300" />
+                </div>
+                <p class="label">
+                    {{project.title}}
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="personal-projects">
+        <span class="title">PERSONAL PROJECTS</span>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <div class="personal-projects-content">
+            <div *ngFor="let personalProject of personalProjects">
+                <div class="img">
+                    <img src="/assets/{{personalProject.imgPath}}" width="275" height="275" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="other-projects">
+        <span class="title">OTHER PROJECTS</span>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <div>
+            <div class="other-projects-content" *ngFor="let personalProject of personalProjects">
+                <div class="img">
+                    <img src="/assets/{{personalProject.imgPath}}" width="127" height="55" />
+                </div>
+                <div>
+                    <p>Lorem Ipsum</p>
+                    <p>Role: Lorem Ipsum</p>
+                    <p>Tech: Lorem Ipsum</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
