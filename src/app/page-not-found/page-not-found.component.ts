@@ -17,7 +17,7 @@ export class PageNotFoundComponent {
 
   ngAfterViewInit() {
     Promise.resolve().then(() => {
-      this.sharedDataService.headerSize.subscribe((size: number) => {
+      this.sharedDataService.headerSizeBehavior.subscribe((size: number) => {
         this.headerSize = size + this.sharedDataService.offsetHeight;
         this.changeDetectorRef.detectChanges();
       });

@@ -1,10 +1,26 @@
-export class ProjectWrapperModel {
-    title?: string;
-    pageId?: string;
-    imgPath?: string;
+export interface ProjectWrapperModel {
+    secctions: SecctionModel;
+    projects: ProjectModel[];
+    personalProjects: ProjectModel[];
+    otherProjects: ProjectModel[];
+}
 
-    constructor(title: string, pageId: string) {
-        this.title = title;
-        this.pageId = pageId;
-    }
+export interface ProjectModel {
+    title: string;
+    pageId: string;
+    imgPath: string;
+    description: string;
+    details: DetailModel;
+}
+
+export interface DetailModel {
+    engine: string;
+    studio: string;
+}
+
+export interface SecctionModel {
+    introduction: ProjectModel;
+    projects: ProjectModel;
+    personalProjects: ProjectModel;
+    otherProjects: ProjectModel;
 }

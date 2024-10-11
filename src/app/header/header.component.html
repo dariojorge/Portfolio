@@ -14,7 +14,7 @@
                         <a class="nav-link">Projects</a>
                         <ul class="dropdown-menu dropdown-menu-color">
                             <li *ngFor="let project of projects;">
-                                <a class="dropdown-item" aria-current="page" routerLink="/project/{{ project.pageId }}" routerLinkActive="active">{{ project.title }}</a>
+                                <a class="dropdown-item" aria-current="page" routerLink="/project/{{ project.pageId }}" routerLinkActive="active">{{ project.pageId }}</a>
                             </li>
                         </ul>
                     </li>

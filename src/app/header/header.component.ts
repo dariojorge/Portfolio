@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { ChangeDetectorRef, Component, ElementRef, ViewChild } from '@angular/core';
 import { SharedDataService } from '../services/shared-data.service';
-import { ProjectWrapperModel } from '../models/project-wrapper.model';
+import { ProjectModel, ProjectWrapperModel } from '../models/project-wrapper.model';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
@@ -12,25 +12,22 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent{
-  personalProjects: ProjectWrapperModel[] = [];
-  projects: ProjectWrapperModel[] = [];
+  personalProjects: ProjectModel[] = [];
+  projects: ProjectModel[] = [];
   @ViewChild('headContainerSize') elementView?: ElementRef;
   observer!: ResizeObserver;
 
-  constructor(private sharedDataService: SharedDataService) { }
-
-  ngOnInit() {
-    this.personalProjects.push(new ProjectWrapperModel("Personal Project 1", "personalProject1"));
-    this.personalProjects.push(new ProjectWrapperModel("Personal Project 2", "personalProject2"));
-    this.personalProjects.push(new ProjectWrapperModel("Personal Project 3", "personalProject3"));
-
-    this.projects.push(new ProjectWrapperModel("Project 1", "project1"));
-    this.projects.push(new ProjectWrapperModel("Project 2", "project2"));
-    this.projects.push(new ProjectWrapperModel("Project 3", "project3"));
-  }
+  constructor(private sharedDataService: SharedDataService, private changeDetectorRef: ChangeDetectorRef) { }
 
   ngAfterViewInit() {
     this.setUpResizeObserver();
+    Promise.resolve().then(() => {
+      this.sharedDataService.projectWrapperBehavior.subscribe((projectWrapper: ProjectWrapperModel) => {
+        this.personalProjects = projectWrapper.personalProjects;
+        this.projects = projectWrapper.projects;
+        this.changeDetectorRef.detectChanges();
+      });
+    });
   }
 
   setUpResizeObserver(): void {
@@ -43,7 +40,7 @@ export class HeaderComponent{
 
   useNewSizes() {
     const element = this.elementView?.nativeElement;
-    this.sharedDataService.headerSize.next(element.offsetHeight);
+    this.sharedDataService.headerSizeBehavior.next(element.offsetHeight);
   }
 
 }
