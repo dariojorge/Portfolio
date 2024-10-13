@@ -31,4 +31,8 @@ export class HomeComponent {
       });
     });
   }
+
+  onClick($event: MouseEvent) {
+    throw new Error('Method not implemented.');
+  }
 }

@@ -9,6 +9,7 @@ export interface ProjectModel {
     title: string;
     pageId: string;
     imgPath: string;
+    subTitle: string;
     description: string;
     details: DetailModel;
 }

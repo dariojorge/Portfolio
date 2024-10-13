@@ -1,5 +1,5 @@
 .content {
-    padding: 0 1% 1% 1%;
+    padding: 0 12% 1% 12%;
 }
 
 .projects {
@@ -15,17 +15,63 @@
         margin-bottom: 15px;
     }
 
-    .projects-container {
-        display: flex;
-        justify-content: center;
-    }
+    .projects-content {
+        padding-bottom: 15px;
 
-    .label {
-        display: flex;
-        justify-content: center;
-        color: #0a8ecf;
-        font-size: 45px;
-        font-weight: 500;
+        .projects-container {
+            display: flex;
+            justify-content: center;
+
+            border-color: rgb(0, 0, 0);
+            border-style: solid;
+            border-width: 3px;
+            border-radius: 0px;
+
+            background-color: transparent;
+            background-position: center top;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            .img {
+                height: 100%;
+                width: 100%;
+                min-height: 342px;
+                cursor: pointer;
+            }
+
+            .description {
+                position: absolute;
+                background-color: rgba(51, 51, 51, 0.84);
+                border-width: 1px 1px 1px 1px;
+                border-top-left-radius: 0px;
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+                border-bottom-left-radius: 0px;
+
+                right: 12%;
+
+                color: white;
+
+                h2 {
+                    display: flex;
+                    justify-content: center;
+                }
+
+                span {
+                    display: flex;
+                    justify-content: center;
+                    padding: 0 5% 1% 5%;
+                }
+            }
+        }
+
+        .label {
+            display: flex;
+            justify-content: center;
+            color: #0a8ecf;
+            font-size: 45px;
+            font-weight: 500;
+        }
     }
 }
 

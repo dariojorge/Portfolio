@@ -7,41 +7,23 @@
 
     <section class="projects">
         <span class="title">{{projectWrapper.secctions.projects.title}}</span>
+        @for (project of projectWrapper.projects; track project.pageId) {
         <div class="projects-content">
-            @for (project of projectWrapper.projects; track project.pageId) {
-            <div class="projects-content">
-                <p class="label">
+            <!-- <p class="label">
                     {{project.title}}
-                </p>
-                <div class="projects-container">
-                    <a aria-current="page" routerLink="/project/{{ project.pageId }}" routerLinkActive="active">
+                </p> -->
+            <div class="projects-container" [ngStyle]="{'background-image': 'url(assets/' + project.imgPath + ')'}">
+                <!-- <a aria-current="page" routerLink="/project/{{ project.pageId }}" routerLinkActive="active">
                         <img src="assets/{{project.imgPath}}" width="800" height="300" />
-                    </a>
-                    <div class="description">
-                        <p>{{project.description}}</p>
-                        <p>{{project.details.engine}}</p>
-                        <p>{{project.details.studio}}</p>
-                    </div>
+                    </a> -->
+                <a class="img" routerLink="/project/{{ project.pageId }}" routerLinkActive="active"></a>
+                <div class="description">
+                    <h2>{{project.title}}</h2>
+                    <span>{{project.subTitle}}</span>
                 </div>
             </div>
-            }
         </div>
-    </section>
-
-    <section class="personal-projects">
-        <span class="title">{{projectWrapper.secctions.personalProjects.title}}</span>
-        <p>{{projectWrapper.secctions.personalProjects.description}}</p>
-        <div class="personal-projects-content">
-            @for (personalProject of projectWrapper.personalProjects; track personalProject.pageId) {
-            <div>
-                <div class="img">
-                    <a aria-current="page" routerLink="/project/{{ personalProject.pageId }}" routerLinkActive="active">
-                        <img src="assets/{{personalProject.imgPath}}" width="275" height="275" />
-                    </a>
-                </div>
-            </div>
-            }
-        </div>
+        }
     </section>
 
     <section class="other-projects">
