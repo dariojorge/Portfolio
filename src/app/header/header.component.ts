@@ -3,6 +3,7 @@ import { ChangeDetectorRef, Component, ElementRef, ViewChild } from '@angular/co
 import { SharedDataService } from '../services/shared-data.service';
 import { ProjectModel, ProjectWrapperModel } from '../models/project-wrapper.model';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { HeaderWrapperModel } from '../models/header-wrapper';
 
 @Component({
   selector: 'app-header',
@@ -11,21 +12,19 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
-export class HeaderComponent{
-  personalProjects: ProjectModel[] = [];
-  projects: ProjectModel[] = [];
+export class HeaderComponent {
+  headerWrapper!: HeaderWrapperModel;
   @ViewChild('headContainerSize') elementView?: ElementRef;
   observer!: ResizeObserver;
 
   constructor(private sharedDataService: SharedDataService, private changeDetectorRef: ChangeDetectorRef) { }
 
   ngAfterViewInit() {
-    this.setUpResizeObserver();
     Promise.resolve().then(() => {
-      this.sharedDataService.projectWrapperBehavior.subscribe((projectWrapper: ProjectWrapperModel) => {
-        //this.personalProjects = projectWrapper.personalProjects;
-        //this.projects = projectWrapper.projects;
+      this.sharedDataService.headerWrapperBehavior.subscribe((headerWrapper: HeaderWrapperModel) => {
+        this.headerWrapper = headerWrapper;
         this.changeDetectorRef.detectChanges();
+        this.setUpResizeObserver();
       });
     });
   }

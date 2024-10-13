@@ -1,39 +1,36 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-expand-sm navbar-light fixed-top display-block bg-white">
+        @if (headerWrapper !== undefined) {
         <div class="header-wrapper">
-            <h2 class="color-name">Dário Jorge</h2>
-            <h3 class="color-title">Fullstack Developer</h3>
+            <h2 class="color-name">{{headerWrapper.name}}</h2>
+            <h3 class="color-title">{{headerWrapper.position}}</h3>
         </div>
         <div #headContainerSize class="container-fluid header-bottom-background-color">
             <div id="navBar">
                 <ul class="navbar-nav me-auto flex-row">
-                    <li class="nav-item active">
-                        <a class="nav-link" aria-current="page" routerLink="/home" routerLinkActive="active">Home</a>
-                    </li>
-                    <!-- <li class="nav-item dropdown">
-                        <a class="nav-link">Projects</a>
-                        <ul class="dropdown-menu dropdown-menu-color">
-                            <li *ngFor="let project of projects;">
-                                <a class="dropdown-item" aria-current="page" routerLink="/project/{{ project.pageId }}" routerLinkActive="active">{{ project.pageId }}</a>
-                            </li>
-                        </ul>
-                    </li>
+                    @for (projects of headerWrapper.secctions; track projects.title) {
+                    @if(projects.pages !== undefined) {
                     <li class="nav-item dropdown">
-                        <a class="nav-link">Personal Projects</a>
+                        <a class="nav-link">{{projects.title}}</a>
                         <ul class="dropdown-menu dropdown-menu-color">
-                            <li *ngFor="let personalProject of personalProjects;">
-                                <a class="dropdown-item" aria-current="page" routerLink="/personalProject/{{ personalProject.pageId }}" routerLinkActive="active">{{ personalProject.title }}</a>
+                            @for (project of projects.pages; track project.pageId) {
+                            <li>
+                                <a class="dropdown-item" aria-current="page" routerLink="/{{ projects.pathSegment }}/{{ project.pageId }}"
+                                    routerLinkActive="active">{{ project.pageId }}</a>
                             </li>
+                            }
                         </ul>
-                    </li> -->
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" routerLink="/resume" routerLinkActive="active">Resume</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" routerLink="/about" routerLinkActive="active">About</a>
+                    } @else {
+                    <li class="nav-item active">
+                        <a class="nav-link" aria-current="page" routerLink="/{{projects.pageId}}"
+                            routerLinkActive="active">{{projects.title}}</a>
                     </li>
+                    }
+                    }
                 </ul>
             </div>
         </div>
+        }
     </nav>
 </header>

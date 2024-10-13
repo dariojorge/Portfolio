@@ -1,0 +1,54 @@
+{
+    "name": "Dário Jorge",
+    "position": "Fullstack Developer",
+    "secctions": [
+        {
+            "title": "Home",
+            "pageId": "home"
+        },
+        {
+            "title": "Projects",
+            "pathSegment": "project",
+            "pages": [
+                {
+                    "title": "Project 1",
+                    "pageId": "project1"
+                },
+                {
+                    "title": "Project 2",
+                    "pageId": "project2"
+                },
+                {
+                    "title": "Project 3",
+                    "pageId": "project3"
+                }
+            ]
+        },
+        {
+            "title": "Personal Projects",
+            "pathSegment": "personalProject",
+            "pages": [
+                {
+                    "title": "Personal Project 1",
+                    "pageId": "personalProject1"
+                },
+                {
+                    "title": "Personal Project 2",
+                    "pageId": "personalProject2"
+                },
+                {
+                    "title": "Personal Project 3",
+                    "pageId": "personalProject3"
+                }
+            ]
+        },
+        {
+            "title": "Resume",
+            "pageId": "resume"
+        },
+        {
+            "title": "About",
+            "pageId": "about"
+        }
+    ]
+}
