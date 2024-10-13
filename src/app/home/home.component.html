@@ -1,32 +1,44 @@
 <div class="content" [ngStyle]="{'padding-top': headerSize + 'px'}">
     @if (projectWrapper !== undefined) {
     <section class="home-introdution">
-        <h4>{{projectWrapper.secctions.introduction.title}}</h4>
-        <p>{{projectWrapper.secctions.introduction.description}}</p>
+        <h4>{{projectWrapper.introduction.title}}</h4>
+        <p>{{projectWrapper.introduction.description}}</p>
     </section>
 
+    @for (projects of projectWrapper.secctions; track projects.title) {
     <section class="projects">
-        <span class="title">{{projectWrapper.secctions.projects.title}}</span>
-        @for (project of projectWrapper.projects; track project.pageId) {
+        <span class="title">{{projects.title}}</span>
+        <p>{{projects.description}}</p>
+        @for (project of projects.components; track project.pageId) {
         <div class="projects-content">
-            <!-- <p class="label">
-                    {{project.title}}
-                </p> -->
+            @if (project.details === undefined) {
             <div class="projects-container" [ngStyle]="{'background-image': 'url(assets/' + project.imgPath + ')'}">
-                <!-- <a aria-current="page" routerLink="/project/{{ project.pageId }}" routerLinkActive="active">
-                        <img src="assets/{{project.imgPath}}" width="800" height="300" />
-                    </a> -->
                 <a class="img" routerLink="/project/{{ project.pageId }}" routerLinkActive="active"></a>
                 <div class="description">
                     <h2>{{project.title}}</h2>
                     <span>{{project.subTitle}}</span>
                 </div>
             </div>
+            } @else {
+                <div class="other-projects-container">
+                    <div class="img">
+                        <a aria-current="page" routerLink="/project/{{ project.pageId }}" routerLinkActive="active">
+                            <img src="assets/{{project.imgPath}}" width="127" height="55" />
+                        </a>
+                    </div>  
+                    <div>
+                        <p>{{project.details.description}}</p>
+                        <p>{{project.details.engine}}</p>
+                        <p>{{project.details.studio}}</p>
+                    </div>
+                </div>
+            }
         </div>
         }
     </section>
+    }
 
-    <section class="other-projects">
+    <!-- <section class="other-projects">
         <span class="title">{{projectWrapper.secctions.otherProjects.title}}</span>
         <p>{{projectWrapper.secctions.otherProjects.description}}</p>
         <div>
@@ -45,6 +57,6 @@
             </div>
             }
         </div>
-    </section>
+    </section> -->
     }
 </div>

@@ -1,8 +1,17 @@
 export interface ProjectWrapperModel {
-    secctions: SecctionModel;
-    projects: ProjectModel[];
-    personalProjects: ProjectModel[];
-    otherProjects: ProjectModel[];
+    introduction: IntroductionModel;
+    secctions: SecctionModel[];
+}
+
+export interface IntroductionModel {
+    title: string;
+    description: string;
+}
+
+export interface SecctionModel {
+    title: string;
+    description: string;
+    components: ProjectModel[];
 }
 
 export interface ProjectModel {
@@ -10,18 +19,12 @@ export interface ProjectModel {
     pageId: string;
     imgPath: string;
     subTitle: string;
-    description: string;
     details: DetailModel;
 }
 
 export interface DetailModel {
     engine: string;
     studio: string;
+    description: string;
 }
 
-export interface SecctionModel {
-    introduction: ProjectModel;
-    projects: ProjectModel;
-    personalProjects: ProjectModel;
-    otherProjects: ProjectModel;
-}

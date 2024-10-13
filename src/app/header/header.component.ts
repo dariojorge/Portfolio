@@ -23,8 +23,8 @@ export class HeaderComponent{
     this.setUpResizeObserver();
     Promise.resolve().then(() => {
       this.sharedDataService.projectWrapperBehavior.subscribe((projectWrapper: ProjectWrapperModel) => {
-        this.personalProjects = projectWrapper.personalProjects;
-        this.projects = projectWrapper.projects;
+        //this.personalProjects = projectWrapper.personalProjects;
+        //this.projects = projectWrapper.projects;
         this.changeDetectorRef.detectChanges();
       });
     });
