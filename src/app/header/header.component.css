@@ -1,5 +1,6 @@
 .header-wrapper {
-    flex: none;
+    flex-direction: row;
+    display: flex;
 
     --bs-gutter-x: 1.5rem;
     padding-left: calc(var(--bs-gutter-x)* .5);
@@ -9,6 +10,20 @@
 
     border-bottom: solid;
     border-bottom-color: rgba(0, 212, 255, 1);
+
+    .name-title {
+        flex: none;
+    }
+
+    .icons {
+        margin-top: 50px;
+        margin-right: 40px;
+        margin-left: auto;
+
+        img {
+            margin-left: 20px;
+        }
+    }
 }
 
 .navbar {
