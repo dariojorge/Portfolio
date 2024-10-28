@@ -10,13 +10,13 @@ import { ProjectDetailWrapperModel } from 'src/app/models/project-detail-wrapper
 import { SharedDataService } from 'src/app/services/shared-data.service';
 
 @Component({
-  selector: 'app-project1',
+  selector: 'app-unseen-value',
   standalone: true,
   imports: [CommonModule, ProjectInfoComponent, ProjectTrailerComponent, ProjectContributionComponent, ProjectGameplayComponent, ProjectMechanicsComponent, ProjectGameplayProgressionComponent],
-  templateUrl: './project1.component.html',
-  styleUrl: './project1.component.css'
+  templateUrl: './unseen-value.component.html',
+  styleUrl: './unseen-value.component.css'
 })
-export class Project1Component {
+export class UnseenValueComponent {
   headerSize: number = 0;
   projectDetailWrapperModel!: ProjectDetailWrapperModel;
 
@@ -30,7 +30,7 @@ export class Project1Component {
       });
     });
     Promise.resolve().then(() => {
-      this.sharedDataService.project1WrapperBehavior.subscribe((projectDetailWrapperModel: ProjectDetailWrapperModel) => {
+      this.sharedDataService.unseenValueWrapperBehavior.subscribe((projectDetailWrapperModel: ProjectDetailWrapperModel) => {
         this.projectDetailWrapperModel = projectDetailWrapperModel;
         this.changeDetectorRef.detectChanges();
       });

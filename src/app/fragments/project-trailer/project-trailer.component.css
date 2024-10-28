@@ -1,0 +1,11 @@
+.trailer {
+    padding: 0 12% 1% 12%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    height: 778px;
+
+    iframe {
+        width: 1430px;
+    }
+}

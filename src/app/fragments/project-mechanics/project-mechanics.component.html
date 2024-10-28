@@ -1,0 +1,30 @@
+<div class="mechanic-content">
+    <span class="mechanic-title">{{projectMechanics().intro.title}}</span>
+    <div class="mechanic-content">
+        <div>
+            <app-text-list [textList]="projectMechanics().intro.text" [textType]="TextTypeEnum.NORMAL"></app-text-list>
+        </div>
+        <div class="mechanic">
+            @for (mechanic of projectMechanics().mechanics; track mechanic) {
+            <div>
+                <div class="image">
+                    <img src="assets/{{mechanic.images[0].path}}" />
+                </div>
+                <div class="title">
+                    <span [innerHTML]="mechanic.title| bold"></span>
+                </div>
+                <app-text-list [textList]="mechanic.text" [textType]="TextTypeEnum.NORMAL"></app-text-list>
+            </div>
+            }
+        </div>
+        <div class="mechanic-game-concept">
+            <div class="title">
+                <span [innerHTML]="projectMechanics().gameConcept.title| bold"></span>
+            </div>
+            <app-text-list [textList]="projectMechanics().gameConcept.text" [textType]="TextTypeEnum.NORMAL"></app-text-list>
+            <div class="image">
+                <img src="assets/{{projectMechanics().gameConcept.images[0].path}}" />
+            </div>
+        </div>
+    </div>
+</div>

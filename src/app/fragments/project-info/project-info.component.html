@@ -1,0 +1,9 @@
+<div class="info-content">
+    <span class="info-title">{{projectInfo().intro.title}}</span>
+    <div class="intro">
+        <app-text-list [textList]="projectInfo().intro.text" [textType]="TextTypeEnum.NORMAL"></app-text-list>
+    </div>
+    <div class="info">
+        <app-text-list [textList]="projectInfo().info" [textType]="TextTypeEnum.NORMAL"></app-text-list>
+    </div>
+</div>

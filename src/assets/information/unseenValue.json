@@ -1,0 +1,196 @@
+{
+    "projectTrailer": "https://www.youtube.com/embed/k_t2q4WOFQc",
+    "projectInfo": {
+        "intro": {
+            "title": "Project Info",
+            "text": [
+                "Unseen Value is a single person, puzzle game developed by three people. * Correctly identify * the * objects * and * learn their value * in a 21st century auction house in Lisbon.",
+                "The game was recognized for its innovative approach, winning * PlayStation® Talents Awards 2023 * for * Most Innovative Game and Best Art*, and it was also nominated for Best Game of the Year."
+            ]
+        },
+        "info": [
+            "*Roles: * Game Designer & Product Owner",
+            "*Genre: * 3 people",
+            "*Team Size: * Puzzle, Narrative",
+            "*Engine: * Unreal Engine 5"
+        ],
+        "images": [
+            {
+                "id": "0",
+                "path": "image-not-found-icon.svg"
+            },
+            {
+                "id": "1",
+                "path": "image-not-found-icon.svg"
+            },
+            {
+                "id": "2",
+                "path": "image-not-found-icon.svg"
+            }
+        ]
+    },
+    "projectContribution": {
+        "title": "Contributions",
+        "gameplayDesign": {
+            "title": "Gameplay Design",
+            "list": [
+                "Game Concept",
+                "Core Gameplay",
+                "Dialogue Creation",
+                "Level Progression",
+                "Story Progression"
+            ]
+        },
+        "productOwner": {
+            "title": "Product Owner",
+            "list": [
+                "Wrote User Stories",
+                "Kept track of the backlog",
+                "Made the team keep the same vision"
+            ]
+        },
+        "other": {
+            "title": "Other",
+            "list": [
+                "Quality Assurance",
+                "Beta testing preparations"
+            ]
+        }
+    },
+    "projectGameplay": {
+        "intro": {
+            "title": "Gameplay",
+            "text": [
+                "Unseen Value places players in the world of auction houses, * inspired by real-life historical objects * where we question * the true value of an object*.",
+                "Players are challenged to find clues about an objects characteristics and then, using the book, find what kind and style of object they are exploring.",
+                "The game emphasizes problem-solving, empathy, and a unique blend of narrative-driven mechanics that challenge both perception and memory."
+            ]
+        },
+        "content": {
+            "title": "Core main loop",
+            "images": [
+                {
+                    "id": "0",
+                    "path": "gifExample.gif"
+                },
+                {
+                    "id": "1",
+                    "path": "image-not-found-icon.svg"
+                }
+            ]
+        }
+    },
+    "projectMechanics": {
+        "intro": {
+            "title": "Mechanics",
+            "text": [
+                "Unseen Value places players in the world of auction houses, inspired by real-life historical objects where we question the true value of an object.",
+                "The game emphasizes problem-solving, empathy, and a unique blend of narrative-driven mechanics that challenge both perception and memory."
+            ]
+        },
+        "mechanics": [
+            {
+                "images": [
+                    {
+                        "id": "0",
+                        "path": "image-not-found-icon.svg"
+                    }
+                ],
+                "title": "Cognitive Puzzles",
+                "text": [
+                    "These puzzles are designed to allow players to explore the object in front of them.",
+                    "The clue points disappear from view when not observed directly, forcing players to rely on their memory to solve tasks."
+                ]
+            },
+            {
+                "images": [
+                    {
+                        "id": "0",
+                        "path": "image-not-found-icon.svg"
+                    }
+                ],
+                "title": "Memory & Learning",
+                "text": [
+                    "Each clue point gives the players information about a characteristic of their object.",
+                    "After collecting all clues, players must be able to research and discover what type and style of object they have in front of them."
+                ]
+            },
+            {
+                "images": [
+                    {
+                        "id": "0",
+                        "path": "image-not-found-icon.svg"
+                    }
+                ],
+                "title": "Quick time events & narrative",
+                "text": [
+                    "As players navigate the world, they will uncover hidden narratives that deepen the game's themes.",
+                    "Aiming at fostering empathy and raising questions. Making players question philosophical art questions such as: “What is a fake”, “Are replicas falsifications?”"
+                ]
+            }
+        ],
+        "gameConcept": {
+            "images": [
+                {
+                    "id": "0",
+                    "path": "image-not-found-icon.svg"
+                }
+            ],
+            "title": "Game Concept",
+            "text": [
+                "Inspired by real-life art related work, from auction house research methods to Art conservation topics.",
+                "We’ve talked with many professionals of the field about how to work is done to make the experience as realistic as possible."
+            ]
+        }
+    },
+    "projectGameplayProgression": {
+        "intro": {
+            "title": "Grameplay Progression",
+            "text": [
+                "The player begins with easier levels that progressively increase in difficulty. To keep the game flow dynamic, the levels alternate between easy, medium, and hard.",
+                "In the harder levels, players need to find more clues and will have a greater variety of options to select and figure it out.",
+                "The levels are organized to reflect different times of the day, starting at sunrise and ending in the evening."
+            ]
+        },
+        "details": {
+            "images": [
+                {
+                    "id": "0",
+                    "path": "image-not-found-icon.svg"
+                },
+                {
+                    "id": "1",
+                    "path": "image-not-found-icon.svg"
+                }
+            ],
+            "text": [
+                "After some levels, players will encounter a \"last clue point.\" These function as quick-time events, where players have a brief window to click on them.",
+                "Successfully completing these events rewards players with a narrative cutscene that presents a philosophical question, such as:"
+            ],
+            "list": [
+                "Are objects with old restorations still authentic?",
+                "Are copies fakes?",
+                "Is monetary value more important than emotional value?",
+                "What is the value of a fake?",
+                "Can destroyed objects still hold value?"
+            ]
+        },
+        "guidance": {
+            "title": "GUIDANCE",
+            "images": [
+                {
+                    "id": "0",
+                    "path": "image-not-found-icon.svg"
+                },
+                {
+                    "id": "1",
+                    "path": "image-not-found-icon.svg"
+                },
+                {
+                    "id": "2",
+                    "path": "image-not-found-icon.svg"
+                }
+            ]
+        }
+    }
+}

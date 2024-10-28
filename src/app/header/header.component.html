@@ -2,20 +2,16 @@
     <nav class="navbar navbar-expand-lg navbar-expand-sm navbar-light fixed-top display-block bg-white">
         @if (headerWrapper !== undefined) {
         <div class="header-wrapper">
-            <div class="name-title">
+            <div>
                 <h2 class="color-name">{{headerWrapper.name}}</h2>
                 <h3 class="color-title">{{headerWrapper.position}}</h3>
             </div>
             <div class="icons">
-                <a target="_blank" href="https://pt.linkedin.com/">
-                    <img src="assets/media/linkedIn_icon.png" width="30" height="30" />
+                @for (media of headerWrapper.medias; track media.mediaLink) {
+                <a target="_blank" href="{{media.mediaLink}}">
+                    <img src="assets/media/{{media.mediaImg}}" />
                 </a>
-                <a target="_blank" href="https://x.com/?lang=pt">
-                    <img src="assets/media/twitter_icon.png" width="30" height="30" />
-                </a>
-                <a target="_blank" href="https://itch.io/">
-                    <img src="assets/media/itch_io_icon.svg" width="30" height="30" />
-                </a>
+                }
             </div>
         </div>
         <div #headContainerSize class="container-fluid header-bottom-background-color">
@@ -30,7 +26,7 @@
                             <li>
                                 <a class="dropdown-item" aria-current="page"
                                     routerLink="/{{ projects.pathSegment }}/{{ project.pageId }}"
-                                    routerLinkActive="active">{{ project.pageId }}</a>
+                                    routerLinkActive="active">{{ project.title }}</a>
                             </li>
                             }
                         </ul>

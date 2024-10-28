@@ -11,10 +11,6 @@
     border-bottom: solid;
     border-bottom-color: rgba(0, 212, 255, 1);
 
-    .name-title {
-        flex: none;
-    }
-
     .icons {
         margin-top: 50px;
         margin-right: 40px;
@@ -22,6 +18,8 @@
 
         img {
             margin-left: 20px;
+            width: 30px;
+            height: 30px;
         }
     }
 }

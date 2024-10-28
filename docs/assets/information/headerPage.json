@@ -1,6 +1,20 @@
 {
     "name": "Dário Jorge",
     "position": "Fullstack Developer",
+    "medias": [
+        {
+            "mediaImg": "linkedIn_icon.png",
+            "mediaLink": "https://pt.linkedin.com/"
+        },
+        {
+            "mediaImg": "twitter_icon.png",
+            "mediaLink": "https://x.com/?lang=pt"
+        },
+        {
+            "mediaImg": "itch_io_icon.svg",
+            "mediaLink": "https://itch.io/"
+        }
+    ],
     "secctions": [
         {
             "title": "Home",

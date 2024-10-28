@@ -1,0 +1,22 @@
+<div class="gameplay-progression-content">
+    <span class="gameplay-progression-title">{{projectGameplayProgression().intro.title}}</span>
+    <div class="gameplay-progression-content">
+        <div>
+            <app-text-list [textList]="projectGameplayProgression().intro.text" [textType]="TextTypeEnum.NORMAL"></app-text-list>
+        </div>
+        <div class="image">
+            <img src="assets/{{projectGameplayProgression().details.images[0].path}}" />
+        </div>
+        <div>
+            <app-text-list [textList]="projectGameplayProgression().details.text" [textType]="TextTypeEnum.NORMAL"></app-text-list>
+        </div>
+        <div>
+            <app-text-list [textList]="projectGameplayProgression().details.list" [textType]="TextTypeEnum.LIST"></app-text-list>
+        </div>
+        <div class="image">
+            <img src="assets/{{projectGameplayProgression().details.images[1].path}}" />
+        </div>
+        <span class="gameplay-progression-title">{{projectGameplayProgression().guidance.title}}</span>
+        <app-carousel [imageList]="projectGameplayProgression().guidance.images"></app-carousel>
+    </div>
+</div>

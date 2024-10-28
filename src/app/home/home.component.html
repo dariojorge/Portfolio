@@ -20,43 +20,22 @@
                 </div>
             </div>
             } @else {
-                <div class="other-projects-container">
-                    <div class="img">
-                        <a aria-current="page" routerLink="/project/{{ project.pageId }}" routerLinkActive="active">
-                            <img src="assets/{{project.imgPath}}" width="127" height="55" />
-                        </a>
-                    </div>  
-                    <div>
-                        <p>{{project.details.description}}</p>
-                        <p>{{project.details.engine}}</p>
-                        <p>{{project.details.studio}}</p>
-                    </div>
+            <div class="other-projects-container">
+                <div class="img">
+                    <a aria-current="page" routerLink="/project/{{ project.pageId }}" routerLinkActive="active">
+                        <img src="assets/{{project.imgPath}}" width="127" height="55" />
+                    </a>
                 </div>
+                <div>
+                    <p>{{project.details.description}}</p>
+                    <p>{{project.details.engine}}</p>
+                    <p>{{project.details.studio}}</p>
+                </div>
+            </div>
             }
         </div>
         }
     </section>
     }
-
-    <!-- <section class="other-projects">
-        <span class="title">{{projectWrapper.secctions.otherProjects.title}}</span>
-        <p>{{projectWrapper.secctions.otherProjects.description}}</p>
-        <div>
-            @for (otherProject of projectWrapper.otherProjects; track otherProject.pageId) {
-            <div class="other-projects-content">
-                <div class="img">
-                    <a aria-current="page" routerLink="/project/{{ otherProject.pageId }}" routerLinkActive="active">
-                        <img src="assets/{{otherProject.imgPath}}" width="127" height="55" />
-                    </a>
-                </div>
-                <div>
-                    <p>{{otherProject.description}}</p>
-                    <p>{{otherProject.details.engine}}</p>
-                    <p>{{otherProject.details.studio}}</p>
-                </div>
-            </div>
-            }
-        </div>
-    </section> -->
     }
 </div>

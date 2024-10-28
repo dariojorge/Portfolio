@@ -1,0 +1,17 @@
+@if(textType() === TextTypeEnum.NORMAL) {
+<div class="text">
+    @for (text of textList(); track text) {
+    <div>
+        <span [innerHTML]="text | bold"></span>
+    </div>
+    }
+</div>
+} @else {
+<div>
+    <ul class="list">
+        @for (list of textList(); track list) {
+        <li [innerHTML]="list | bold"></li>
+        }
+    </ul>
+</div>
+}

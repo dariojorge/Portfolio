@@ -6,6 +6,7 @@ import { ResumeComponent } from './resume/resume.component';
 import { AboutComponent } from './about/about.component';
 import { Project1Component } from './projects/project1/project1.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { UnseenValueComponent } from './projects/unseen-value/unseen-value.component';
 
 const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -13,6 +14,7 @@ const routes: Routes = [
     { path: 'resume', component: ResumeComponent },
     { path: 'about', component: AboutComponent },
     { path: 'project/project1', component: Project1Component },
+    { path: 'project/unseen-value', component: UnseenValueComponent },
     { path: '**', component: PageNotFoundComponent }
 ];
 
