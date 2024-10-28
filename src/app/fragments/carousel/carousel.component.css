@@ -1,5 +1,4 @@
 .carousel-item {
-    /* transition: transform 0.5s ease; */
     img {
         height: 600px;
     }
@@ -12,11 +11,12 @@
 
 .carousel-item-next,
 .active.carousel-item-end {
-  transform: translateX(100%) ease;
+  transform: translateX(100%);
+  transition-duration: 0.5s;
 }
 
 .carousel-item-prev,
 .active.carousel-item-start {
-  transform: translateX(-100%) ease;
-  /* transition: transform 0.5s ease; */
+  transform: translateX(-100%);
+  transition-duration: 0.5s;
 }
