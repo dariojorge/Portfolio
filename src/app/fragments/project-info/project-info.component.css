@@ -9,13 +9,9 @@
         margin-bottom: 15px;
     }
 
-    .info {
-        .text-list {
-            .text {
-                display: grid;
-                justify-content: center;
-                grid-template-columns: 400px 400px;
-            }
-        }
+    .info .text {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 400px 400px;
     }
 }
