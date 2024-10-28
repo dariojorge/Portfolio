@@ -9,7 +9,7 @@
     filter: invert(100%);
 }
 
-.carousel-item-next:not(.carousel-item-start),
+.carousel-item-next,
 .active.carousel-item-end {
   transform: translateX(100%);
 }
