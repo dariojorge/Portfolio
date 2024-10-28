@@ -1,0 +1,10 @@
+.carousel-item {
+    img {
+        height: 600px;
+    }
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
