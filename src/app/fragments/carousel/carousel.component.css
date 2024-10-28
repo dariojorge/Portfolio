@@ -8,3 +8,7 @@
 .carousel-control-prev {
     filter: invert(100%);
 }
+
+.carousel-inner .carousel-item {
+    transition: transform 1s ease;
+}
