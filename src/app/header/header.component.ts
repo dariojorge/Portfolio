@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectorRef, Component, ElementRef, ViewChild, ViewEncapsulation } from '@angular/core';
 import { SharedDataService } from '../services/shared-data.service';
-import { ProjectModel, ProjectWrapperModel } from '../models/project-wrapper.model';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { HeaderWrapperModel } from '../models/header-wrapper';
 
