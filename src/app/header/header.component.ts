@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectorRef, Component, ElementRef, ViewChild } from '@angular/core';
+import { ChangeDetectorRef, Component, ElementRef, ViewChild, ViewEncapsulation } from '@angular/core';
 import { SharedDataService } from '../services/shared-data.service';
 import { ProjectModel, ProjectWrapperModel } from '../models/project-wrapper.model';
 import { RouterLink, RouterLinkActive } from '@angular/router';
@@ -10,7 +10,8 @@ import { HeaderWrapperModel } from '../models/header-wrapper';
   standalone: true,
   imports: [CommonModule, RouterLink, RouterLinkActive],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.css'
+  styleUrl: './header.component.css',
+  encapsulation: ViewEncapsulation.None
 })
 export class HeaderComponent {
   headerWrapper!: HeaderWrapperModel;

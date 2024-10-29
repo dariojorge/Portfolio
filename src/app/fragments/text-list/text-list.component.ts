@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, ViewEncapsulation } from '@angular/core';
 import { TextTypeEnum } from 'src/app/models/text-type-enum';
 import { BoldPipe } from 'src/app/pipes/bold.pipe';
 
@@ -7,7 +7,8 @@ import { BoldPipe } from 'src/app/pipes/bold.pipe';
   standalone: true,
   imports: [BoldPipe],
   templateUrl: './text-list.component.html',
-  styleUrl: './text-list.component.css'
+  styleUrl: './text-list.component.css',
+  encapsulation: ViewEncapsulation.None
 })
 export class TextListComponent {
   textList = input.required<string[]>();

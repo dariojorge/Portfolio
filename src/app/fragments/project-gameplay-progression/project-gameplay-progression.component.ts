@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, ViewEncapsulation } from '@angular/core';
 import { ProjectGameplayProgressionModel } from 'src/app/models/project-detail-wrapper.model';
 import { BoldPipe } from 'src/app/pipes/bold.pipe';
 import { CarouselComponent } from "../carousel/carousel.component";
@@ -10,7 +10,8 @@ import { TextTypeEnum } from 'src/app/models/text-type-enum';
   standalone: true,
   imports: [BoldPipe, CarouselComponent, TextListComponent],
   templateUrl: './project-gameplay-progression.component.html',
-  styleUrl: './project-gameplay-progression.component.css'
+  styleUrl: './project-gameplay-progression.component.css',
+  encapsulation: ViewEncapsulation.None
 })
 export class ProjectGameplayProgressionComponent {
   projectGameplayProgression = input.required<ProjectGameplayProgressionModel>();

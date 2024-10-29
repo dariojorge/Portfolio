@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, ViewEncapsulation } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
@@ -6,7 +6,8 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
   standalone: true,
   imports: [],
   templateUrl: './project-trailer.component.html',
-  styleUrl: './project-trailer.component.css'
+  styleUrl: './project-trailer.component.css',
+  encapsulation: ViewEncapsulation.None
 })
 export class ProjectTrailerComponent {
   urlSafe!: SafeResourceUrl;

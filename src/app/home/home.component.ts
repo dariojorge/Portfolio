@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectorRef, Component } from '@angular/core';
+import { ChangeDetectorRef, Component, ViewEncapsulation } from '@angular/core';
 import { SharedDataService } from '../services/shared-data.service';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
@@ -10,7 +10,8 @@ import { ProjectWrapperModel } from '../models/project-wrapper.model';
   standalone: true,
   imports: [CommonModule, RouterLink, RouterLinkActive],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  styleUrl: './home.component.css',
+  encapsulation: ViewEncapsulation.None
 })
 export class HomeComponent {
   headerSize: number = 0;
