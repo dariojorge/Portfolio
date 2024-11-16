@@ -1,17 +1,24 @@
 <div class="content" [ngStyle]="{'padding-top': headerSize + 'px'}">
-    @if (projectDetailWrapperModel !== undefined) {
-    <app-project-trailer [projectTrailer]="projectDetailWrapperModel.projectTrailer"></app-project-trailer>
+    @if (projectModel !== undefined) {
+    <app-play-button [playButtonUrl]="playButton"></app-play-button>
+    <app-play-video [playVideo]="playVideo"></app-play-video>
     <hr>
-    <app-project-info [projectInfo]="projectDetailWrapperModel.projectInfo"></app-project-info>
+    <app-project-description [projectDescription]="projectDescription"></app-project-description>
     <hr>
-    <app-project-contribution
-        [projectContribution]="projectDetailWrapperModel.projectContribution"></app-project-contribution>
+    <app-playstation-talents-award [playstationTalentsAwards]="playstationTalentsAwards"></app-playstation-talents-award>
     <hr>
-    <app-project-gameplay [projectGameplay]="projectDetailWrapperModel.projectGameplay"></app-project-gameplay>
+    <app-contribuitions [contributions]="contributions"></app-contribuitions>
     <hr>
-    <app-project-mechanics [projectMechanics]="projectDetailWrapperModel.projectMechanics"></app-project-mechanics>
+    <app-gameplay [gameplay]="gameplay"></app-gameplay>
     <hr>
-    <app-project-gameplay-progression
-        [projectGameplayProgression]="projectDetailWrapperModel.projectGameplayProgression"></app-project-gameplay-progression>
+    <app-mechanics [mechanics]="mechanics"></app-mechanics>
+    <hr>
+    <app-game-concept [gameConcept]="gameConcept"></app-game-concept>
+    <hr>
+    <app-gameplay-narrative-progression [gameplayNarrativeProgression]="gameplayNarrativeProgression"></app-gameplay-narrative-progression>
+    <hr>
+    <app-problems-solutions [problemsSolutions]="problemsSolutions"></app-problems-solutions>
+    <hr>
+    <app-guidance [guidance]="guidance"></app-guidance>
     }
 </div>

@@ -3,6 +3,10 @@
         @for (image of imageList(); track image.id; let index = $index) {
         <div class="carousel-item" [ngClass]="{ 'active': index===0 }">
             <img src="assets/{{image.path}}" class="d-block w-100">
+            <div class="carousel-caption-custom">
+                <span class="image-caption">{{image.description}}</span>
+                <span class="image-count">{{index}}/{{imageList()?.length}}</span>
+            </div>
         </div>
         }
     </div>

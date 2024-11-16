@@ -1,0 +1,86 @@
+@switch (type()) {
+    @case (contentTypeEnum.DOTS) {
+        <div class="text-list-with-dots">
+            @if(content()?.title) {
+                <span>{{content()?.title}}</span>
+            }
+            @for (text of content()!.text; track text) {
+                <app-text-list-element [text]="text"></app-text-list-element>
+            }
+        </div>
+    }
+    @case (contentTypeEnum.NO_DOTS) {
+        <div class="text-list">
+            @if(content()?.path) {
+                <div [class]="'image-display-' + content()?.id">
+                    <img src="assets/{{content()?.path}}" />
+                </div>
+            }
+            @if(content()?.title) {
+                <div class="sub-title">
+                    <span>{{content()?.title}}</span>
+                </div>
+            }
+            <div class="text-list-without-dots">
+                @for (text of content()!.text; track text) {
+                    <app-text-list-element [text]="text"></app-text-list-element>
+                }
+            </div>
+        </div>
+    }
+    @case (contentTypeEnum.IMAGE_DISPLAY_ALL_01) {
+        <app-image-display-all-01 [images]="contentList()"></app-image-display-all-01>
+    }
+    @case (contentTypeEnum.IMAGE_DISPLAY_ALL_02) {
+        <div class="image-display-all-02">
+            @for (image of contentList(); track image) {
+                <div [class]="'image-display-' + image.id">
+                    <img src="assets/{{image.path}}" />
+                </div>
+            }
+        </div>
+    }
+    @case (contentTypeEnum.CAROUSEL) {
+        <div class="image-display-all-02">
+            <app-carousel [imageList]="contentList()"></app-carousel>
+        </div>
+    }
+    @case (contentTypeEnum.COMPOSIT_CONTENT) {
+        <div class="composit-image-data">
+            @for (contentData of contentList(); track contentData) {
+                @if(contentData?.title) {
+                    <div class="composit-title">
+                        <span>{{contentData?.title}}</span>
+                    </div>
+                }
+                @if(contentData?.path) {
+                    <div [class]="'composit-image-display-' + contentData.id">
+                        @if(contentData?.description) {
+                            <img appImageCalculator #varWithDirective="widthDirective" [class]="'composit-image-' + contentData.id" src="assets/{{contentData.path}}" />
+                            <div [class]="'composit-image-description-' + contentData.id" [style]="'width:' + varWithDirective.imageWidth + 'px'">
+                                <span>{{contentData.description}}</span>
+                            </div>
+                        } @else {
+                            <img [class]="'composit-image-' + contentData.id" src="assets/{{contentData.path}}" />
+                        }
+                    </div>
+                }
+                @if(contentData?.text) {
+                    <div class="composit-text">
+                        <app-text [text]="contentData!.text"></app-text>
+                    </div>
+                }
+                @if(contentData?.content) {
+                    <div class="composit-content">
+                        @for (content of contentData.content; track content) {
+                            <app-content [content]="content" [type]="content!.type"></app-content>
+                        }
+                    </div>
+                }
+            }
+        </div>
+    }
+    @default {
+      Default case.
+    }
+}

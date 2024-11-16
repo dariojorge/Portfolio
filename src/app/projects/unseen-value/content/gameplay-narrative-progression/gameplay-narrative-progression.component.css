@@ -1,0 +1,63 @@
+.gameplay-narrative-progression-content {
+    padding: 0 12% 1% 12%;
+
+    .gameplay-narrative-progression-title {
+        display: flex;
+        justify-content: center;
+        font-size: 45px;
+        font-weight: 500;
+        margin-bottom: 25px;
+    }
+
+    .gameplay-narrative-progression-text {
+        .text {
+            display: grid;
+            justify-content: center;
+
+            span {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .gameplay-narrative-progression-content {
+        .images-style {
+            padding: 0 15% 1% 15%;
+
+            .composit-title {
+                margin-top: 40px;
+                margin-bottom: 10px;
+            }
+
+            .composit-image-display-0 {
+                margin-bottom: 15px;
+            }
+
+            .composit-image-display-1 {
+                margin-bottom: 40px;
+            }
+
+            .composit-image-display-2 {
+                .composit-image-description-2 {
+                    background-color: grey;
+                }
+            }
+            
+            .composit-content {
+                .text-list {
+                    .text-list-without-dots {
+                        margin-bottom: 20px;
+
+                        li {
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+
+                .text-list-with-dots {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}

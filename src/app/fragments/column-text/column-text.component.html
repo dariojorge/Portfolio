@@ -1,0 +1,5 @@
+<ul class="column-style">
+    @for (content of columnText().content; track content) {
+    <app-content [content]="content" [type]="columnText().type"></app-content>
+    }
+</ul>

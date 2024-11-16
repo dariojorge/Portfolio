@@ -1,196 +1,389 @@
 {
-    "projectTrailer": "https://www.youtube.com/embed/k_t2q4WOFQc",
-    "projectInfo": {
-        "intro": {
-            "title": "Project Info",
-            "text": [
-                "Unseen Value is a single person, puzzle game developed by three people. * Correctly identify * the * objects * and * learn their value * in a 21st century auction house in Lisbon.",
-                "The game was recognized for its innovative approach, winning * PlayStation® Talents Awards 2023 * for * Most Innovative Game and Best Art*, and it was also nominated for Best Game of the Year."
-            ]
-        },
-        "info": [
-            "*Roles: * Game Designer & Product Owner",
-            "*Genre: * 3 people",
-            "*Team Size: * Puzzle, Narrative",
-            "*Engine: * Unreal Engine 5"
-        ],
-        "images": [
-            {
-                "id": "0",
-                "path": "image-not-found-icon.svg"
-            },
-            {
-                "id": "1",
-                "path": "image-not-found-icon.svg"
-            },
-            {
-                "id": "2",
-                "path": "image-not-found-icon.svg"
+    "id": "unseen-value",
+    "secctions": [
+        {
+            "id": "play-video",
+            "playVideo": {
+                "video": "https://www.youtube.com/embed/k_t2q4WOFQc",
+                "overlayText": "Play video"
             }
-        ]
-    },
-    "projectContribution": {
-        "title": "Contributions",
-        "gameplayDesign": {
-            "title": "Gameplay Design",
-            "list": [
-                "Game Concept",
-                "Core Gameplay",
-                "Dialogue Creation",
-                "Level Progression",
-                "Story Progression"
-            ]
         },
-        "productOwner": {
-            "title": "Product Owner",
-            "list": [
-                "Wrote User Stories",
-                "Kept track of the backlog",
-                "Made the team keep the same vision"
-            ]
+        {
+            "id": "play-button",
+            "playButton": {
+                "url": "https://marema-studios.itch.io/unseen-value",
+                "buttonText": "Play Here!"
+            }
         },
-        "other": {
-            "title": "Other",
-            "list": [
-                "Quality Assurance",
-                "Beta testing preparations"
-            ]
-        }
-    },
-    "projectGameplay": {
-        "intro": {
+        {
+            "id": "project-description",
+            "title": "Project Description",
+            "text": [
+                "Unseen Value is a single person, * narrative and puzzle * game developed by three people. * Correctly identify * the * objects * and * learn their value * in a 21st century auction house in Lisbon."
+            ],
+            "columnText": {
+                "type": "NO_DOTS",
+                "content": [
+                    {
+                        "text": [
+                            "*Roles: * Game Designer & Product Owner",
+                            "*Team Size: * 3 people"
+                        ]
+                    },
+                    {
+                        "text": [
+                            "*Genre: * Narrative, Puzzle, Educative",
+                            "*Engine: * Unreal Engine 5"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "playstation-talents-awards",
+            "title": "PlayStation® Talents Awards",
+            "text": [
+                "The game was recognized for its innovative approach, winning the * PlayStation® Talents Awards 2023 * for \"*Most Innovative Game*\" and \"*Best Art*\", and it was also nominated for Best Game of the Year."
+            ],
+            "images": {
+                "type": "IMAGE_DISPLAY_ALL_01",
+                "content": [
+                    {
+                        "id": "0",
+                        "path": "unseen-value/image01.webp"
+                    },
+                    {
+                        "id": "1",
+                        "path": "unseen-value/image02.webp"
+                    },
+                    {
+                        "id": "2",
+                        "path": "unseen-value/image03.webp"
+                    },
+                    {
+                        "id": "3",
+                        "path": "unseen-value/image04.webp"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "contributions",
+            "title": "Contributions",
+            "columnText": {
+                "type": "DOTS",
+                "content": [
+                    {
+                        "title": "Gameplay Design",
+                        "text": [
+                            "Game Concept",
+                            "Core Gameplay",
+                            "Dialogue Creation",
+                            "Level Progression",
+                            "Story Progression"
+                        ]
+                    },
+                    {
+                        "title": "Product Owner",
+                        "text": [
+                            "Wrote User Stories",
+                            "Kept track of the backlog",
+                            "Made the team keep the same vision"
+                        ]
+                    },
+                    {
+                        "title": "Other",
+                        "text": [
+                            "Quality Assurance",
+                            "Beta testing preparations"
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "gameplay",
             "title": "Gameplay",
             "text": [
-                "Unseen Value places players in the world of auction houses, * inspired by real-life historical objects * where we question * the true value of an object*.",
-                "Players are challenged to find clues about an objects characteristics and then, using the book, find what kind and style of object they are exploring.",
+                "Unseen Value places players in the world of auction houses, * inspired by real-life historical objects * where we question * the true value of an object.*",
+                "Players are challenged to find clues about an object’s characteristics and then, using the book, find what kind and style of object they are exploring.",
                 "The game emphasizes problem-solving, empathy, and a unique blend of narrative-driven mechanics that challenge both perception and memory."
-            ]
-        },
-        "content": {
-            "title": "Core main loop",
-            "images": [
-                {
-                    "id": "0",
-                    "path": "gifExample.gif"
-                },
-                {
-                    "id": "1",
-                    "path": "image-not-found-icon.svg"
-                }
-            ]
-        }
-    },
-    "projectMechanics": {
-        "intro": {
-            "title": "Mechanics",
-            "text": [
-                "Unseen Value places players in the world of auction houses, inspired by real-life historical objects where we question the true value of an object.",
-                "The game emphasizes problem-solving, empathy, and a unique blend of narrative-driven mechanics that challenge both perception and memory."
-            ]
-        },
-        "mechanics": [
-            {
-                "images": [
+            ],
+            "images": {
+                "type": "IMAGE_DISPLAY_ALL_02",
+                "content": [
                     {
                         "id": "0",
-                        "path": "image-not-found-icon.svg"
-                    }
-                ],
-                "title": "Cognitive Puzzles",
-                "text": [
-                    "These puzzles are designed to allow players to explore the object in front of them.",
-                    "The clue points disappear from view when not observed directly, forcing players to rely on their memory to solve tasks."
-                ]
-            },
-            {
-                "images": [
+                        "path": "unseen-value/gif01.gif"
+                    },
                     {
-                        "id": "0",
-                        "path": "image-not-found-icon.svg"
+                        "id": "1",
+                        "path": "unseen-value/image05.webp"
                     }
-                ],
-                "title": "Memory & Learning",
-                "text": [
-                    "Each clue point gives the players information about a characteristic of their object.",
-                    "After collecting all clues, players must be able to research and discover what type and style of object they have in front of them."
-                ]
-            },
-            {
-                "images": [
-                    {
-                        "id": "0",
-                        "path": "image-not-found-icon.svg"
-                    }
-                ],
-                "title": "Quick time events & narrative",
-                "text": [
-                    "As players navigate the world, they will uncover hidden narratives that deepen the game's themes.",
-                    "Aiming at fostering empathy and raising questions. Making players question philosophical art questions such as: “What is a fake”, “Are replicas falsifications?”"
                 ]
             }
-        ],
-        "gameConcept": {
-            "images": [
-                {
-                    "id": "0",
-                    "path": "image-not-found-icon.svg"
-                }
+        },
+        {
+            "id": "mechanics",
+            "title": "Mechanics",
+            "text": [
+                "We decided to have three main focused mechanics for the player to enjoy.",
+                "The players must * solve cognitive puzzles by collection clues. * Then, they must correlate the clues obtained and the info in the book.",
+                "*To finish a puzzle, players must select the correct style and art of the object.*"
             ],
+            "columnText": {
+                "type": "NO_DOTS",
+                "content": [
+                    {
+                        "id": "0",
+                        "path": "unseen-value/gif02.gif",
+                        "title": "Cognitive Puzzles",
+                        "text": [
+                            "These puzzles are designed to allow players to explore the object in front of them.",
+                            "The clue points disappear from view when not observed directly, forcing players to rely on their memory to solve tasks."
+                        ]
+                    },
+                    {
+                        "id": "0",
+                        "path": "unseen-value/gif03.gif",
+                        "title": "Memory & Learning",
+                        "text": [
+                            "Each clue point gives the players information about a characteristic of their object.",
+                            "After collecting all clues, players must be able to research and discover what type and style of object they have in front of them."
+                        ]
+                    },
+                    {
+                        "id": "0",
+                        "path": "unseen-value/gif04.gif",
+                        "title": "Quick time events & narrative",
+                        "text": [
+                            "As players navigate the world, they will uncover hidden narratives that deepen the game's themes.",
+                            "Aiming at fostering empathy and raising questions. Making players question philosophical art questions such as: “What is a fake”, “Are replicas falsifications?”."
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "game-concept",
             "title": "Game Concept",
             "text": [
                 "Inspired by real-life art related work, from auction house research methods to Art conservation topics.",
-                "We’ve talked with many professionals of the field about how to work is done to make the experience as realistic as possible."
-            ]
-        }
-    },
-    "projectGameplayProgression": {
-        "intro": {
-            "title": "Grameplay Progression",
+                "*We’ve talked with many professionals of the field * about how to work is done to make the experience as realistic as possible."
+            ],
+            "images": {
+                "type": "CAROUSEL",
+                "content": [
+                    {
+                        "id": "0",
+                        "path": "unseen-value/image06.webp",
+                        "description": "Auction House Contact"
+                    },
+                    {
+                        "id": "1",
+                        "path": "unseen-value/image07.webp",
+                        "description": "(Left) Object in-Game| (Right) Real Life Object"
+                    },
+                    {
+                        "id": "2",
+                        "path": "unseen-value/image08.webp",
+                        "description": "(Left) Object in-Game| (Right) Real Life Object"
+                    },
+                    {
+                        "id": "3",
+                        "path": "unseen-value/image09.webp",
+                        "description": "Museum- Japanese Safe"
+                    },
+                    {
+                        "id": "4",
+                        "path": "unseen-value/image10.webp",
+                        "description": "Museum- Japanese Safe"
+                    },
+                    {
+                        "id": "5",
+                        "path": "unseen-value/image11.webp",
+                        "description": "Museum- Ivory Cabinet"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "gameplay-narrative-progression",
+            "title": "Gameplay & Narrative Progression",
             "text": [
                 "The player begins with easier levels that progressively increase in difficulty. To keep the game flow dynamic, the levels alternate between easy, medium, and hard.",
                 "In the harder levels, players need to find more clues and will have a greater variety of options to select and figure it out.",
                 "The levels are organized to reflect different times of the day, starting at sunrise and ending in the evening."
-            ]
+            ],
+            "images": {
+                "type": "COMPOSIT_CONTENT",
+                "content": [
+                    {
+                        "id": "0",
+                        "path": "unseen-value/image12.webp",
+                        "text": [
+                            "With all the research that we had, I needed to decide what kind of object we were going to use and what part of the Art analysis method we were going to follow."
+                        ]
+                    },
+                    {
+                        "id": "1",
+                        "type": "COMPOSIT_CONTENT",
+                        "title": "Unseen Value - Game Flow",
+                        "path": "unseen-value/image13.webp",
+                        "content": [
+                            {
+                                "type": "NO_DOTS",
+                                "text": [
+                                    "After some levels, players will encounter a \"last clue point.\" These function as quick-time events, where players have a brief window to click on them.",
+                                    "*Successfully completing these events rewards players with a narrative cutscene that presents a philosophical question*, such as:"
+                                ]
+                            },
+                            {
+                                "type": "DOTS",
+                                "text": [
+                                    "Are objects with old restorations still authentic?",
+                                    "Are copies fakes?",
+                                    "Is monetary value more important than emotional value?",
+                                    "What is the value of a fake?",
+                                    "Can destroyed objects still hold value?"
+                                ]
+                            },
+                            {
+                                "type": "NO_DOTS",
+                                "text": [
+                                    "I carefully choose some of the objects to * raise the most emotions in players.*",
+                                    "In level 10, the players come across a beautiful Mughal Influence Casket, and after admiring it's beauty they are confronted with the reality: * That casket is a fake, it's not real.*",
+                                    "This led to the * raise of feeling tricked and mad*, and players would feel that. * Players are questioned what changed in the object, it went from beautiful to not having a good value*, but it is the same object.",
+                                    "These are the kind of questions that we invited players to try and think about."
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "2",
+                        "path": "unseen-value/image14.webp",
+                        "description": "Casket used as reference"
+                    }
+                ]
+            }
         },
-        "details": {
-            "images": [
+        {
+            "id": "problems-solutions",
+            "title": "Problems & Solutions",
+            "content": [
                 {
-                    "id": "0",
-                    "path": "image-not-found-icon.svg"
+                    "text": [
+                        "The Art analysis in the auction house followed several steps and it would make the game too overwhelming. To avoid this I choose to only use the * Type and Style * of the method to analyse the objects.",
+                        "I choose these two parameters because they * were the most easily explained and visual.*",
+                        "To identify the Type of an object, the player just needs to understand what shape it has. And to understand what style the object is, the player only needs to identify the materials of the object.",
+                        "However, there was another problem: * What kind of objects and style can we use? * I decided to only * use the most easily identifiable styles * and only use objects that were made with all those styles.",
+                        "In the end I had a list composed of possible styles and objects that we could use:"
+                    ]
                 },
                 {
-                    "id": "1",
-                    "path": "image-not-found-icon.svg"
+                    "columnText": {
+                        "type": "DOTS",
+                        "content": [
+                            {
+                                "title": "Types of furniture:",
+                                "text": [
+                                    "Box",
+                                    "Casket",
+                                    "Fall-front Cabinet",
+                                    "Single door Cabinet",
+                                    "Drawer",
+                                    "Missal Stand",
+                                    "Cabinet"
+                                ]
+                            },
+                            {
+                                "title": "Styles of furniture:",
+                                "text": [
+                                    "Indo-Portuguese",
+                                    "Mughal Influence",
+                                    "Singal-Portuguese",
+                                    "Southeast Asia",
+                                    "Namban"
+                                ]
+                            }
+                        ]
+                    }
+                },
+                {
+                    "text": [
+                        "For the game, we wanted to show at least 2 of each type and style. The objects needed to be organized in a sequence that didn't repeat 2 times in a row the same style or type:​"
+                    ]
+                },
+                {
+                    "table": [
+                        {
+                            "headers": [
+                                "Type",
+                                "Style"
+                            ],
+                            "body": [
+                                [
+                                    "Missal Stand",
+                                    "Cabinet",
+                                    "Casket",
+                                    "Fall-front Cabinet",
+                                    "Drawer",
+                                    "Box",
+                                    "Fall-front Cabinet",
+                                    "Box",
+                                    "Casket",
+                                    "Fall-front Cabinet",
+                                    "Single door Cabinet",
+                                    "Cabinet"
+                                ],
+                                [
+                                    "Namban",
+                                    "Singal-Portuguese",
+                                    "Mughal Influence",
+                                    "Namban",
+                                    "Indo-Portuguese",
+                                    "Southeast Asia",
+                                    "Mughal Influence",
+                                    "Singal-Portuguese",
+                                    "Indo-Portuguese",
+                                    "Namban",
+                                    "Mughal Influence",
+                                    "Indo-Portuguese"
+                                ]
+                            ]
+                        }
+                    ]
                 }
-            ],
+            ]
+        },
+        {
+            "id": "guidance",
+            "title": "Guidance",
             "text": [
-                "After some levels, players will encounter a \"last clue point.\" These function as quick-time events, where players have a brief window to click on them.",
-                "Successfully completing these events rewards players with a narrative cutscene that presents a philosophical question, such as:"
+                "Players are guided by the initial tutorial and by the status of the cursor.",
+                "The tutorial is always available in the book."
             ],
-            "list": [
-                "Are objects with old restorations still authentic?",
-                "Are copies fakes?",
-                "Is monetary value more important than emotional value?",
-                "What is the value of a fake?",
-                "Can destroyed objects still hold value?"
-            ]
-        },
-        "guidance": {
-            "title": "GUIDANCE",
-            "images": [
-                {
-                    "id": "0",
-                    "path": "gifExample.gif"
-                },
-                {
-                    "id": "1",
-                    "path": "image-not-found-icon.svg"
-                },
-                {
-                    "id": "2",
-                    "path": "image-not-found-icon.svg"
-                }
-            ]
+            "images": {
+                "type": "2",
+                "content": [
+                    {
+                        "id": "0",
+                        "path": "image-not-found-icon.svg"
+                    },
+                    {
+                        "id": "1",
+                        "path": "image-not-found-icon.svg"
+                    },
+                    {
+                        "id": "2",
+                        "path": "image-not-found-icon.svg"
+                    },
+                    {
+                        "id": "3",
+                        "path": "image-not-found-icon.svg"
+                    }
+                ]
+            }
         }
-    }
+    ]
 }

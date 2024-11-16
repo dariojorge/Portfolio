@@ -1,0 +1,26 @@
+.description-content {
+    .description {
+        .text {
+            display: grid;
+            justify-content: center;
+
+            span {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .image-display-all-02 {
+        display: grid;
+        justify-content: center;
+
+        .image-display-0 {
+            margin-bottom: 30px;
+        }
+
+        .image-display-1 {
+            display: grid;
+            justify-content: center;
+        }
+    }
+}

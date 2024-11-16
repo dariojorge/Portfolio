@@ -1,0 +1,22 @@
+.game-concept-content {
+    padding: 0 12% 1% 12%;
+
+    .game-concept-title {
+        display: flex;
+        justify-content: center;
+        font-size: 45px;
+        font-weight: 500;
+        margin-bottom: 25px;
+    }
+
+    .game-concept-text {
+        .text {
+            display: grid;
+            justify-content: center;
+
+            span {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
