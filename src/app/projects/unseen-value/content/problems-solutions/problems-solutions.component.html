@@ -1,1 +1,6 @@
-<p>problems-solutions works!</p>
+<div [class]="problemsSolutions().id + '-content'">
+    <span [class]="problemsSolutions().id + '-title'">{{problemsSolutions().title}}</span>
+    <div [class]="problemsSolutions().id + '-content'">
+        <app-content [contentList]="problemsSolutions().content" [type]="problemsSolutions().type"></app-content>
+    </div>
+</div>

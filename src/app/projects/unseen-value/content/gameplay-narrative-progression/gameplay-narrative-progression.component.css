@@ -40,6 +40,9 @@
             .composit-image-display-2 {
                 .composit-image-description-2 {
                     background-color: grey;
+                    span {
+                        margin-left: 10px;
+                    }
                 }
             }
             

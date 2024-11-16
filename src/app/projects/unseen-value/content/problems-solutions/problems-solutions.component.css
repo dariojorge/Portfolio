@@ -1,0 +1,48 @@
+.problems-solutions-content {
+    padding: 0 12% 1% 12%;
+
+    .problems-solutions-title {
+        display: flex;
+        justify-content: center;
+        font-size: 45px;
+        font-weight: 500;
+        margin-bottom: 25px;
+    }
+
+    .problems-solutions-content {
+        display: flex;
+        justify-content: center;
+    }
+
+    .composit-text {
+        .text {
+            display: grid;
+            justify-content: center;
+
+            span {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .composit-content {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 400px 400px;
+
+        .text-list-with-dots {
+            margin-bottom: 20px;
+
+            span {
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .composit-table {
+        .table-content {
+            padding: 0 15% 0 15%;
+        }
+    }
+}

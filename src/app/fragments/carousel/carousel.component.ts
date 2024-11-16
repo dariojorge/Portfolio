@@ -12,6 +12,7 @@ import { ContentModel } from 'src/app/models/project/content.model';
 })
 export class CarouselComponent {
   imageList = input<ContentModel[]>();
+  id = input.required<string>();
 
   constructor() {}
 }

@@ -1,1 +1,9 @@
-<p>guidance works!</p>
+<div [class]="guidance().id + '-content'">
+    <span [class]="guidance().id + '-title'">{{guidance().title}}</span>
+    <div [class]="guidance().id + '-text'">
+        <app-text [text]="guidance().text"></app-text>
+    </div>
+    <div  [class]="guidance().id + '-content'">
+        <app-images [images]="guidance().images"></app-images>
+    </div>
+</div>

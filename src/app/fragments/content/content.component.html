@@ -4,9 +4,11 @@
             @if(content()?.title) {
                 <span>{{content()?.title}}</span>
             }
+            <ul>
             @for (text of content()!.text; track text) {
                 <app-text-list-element [text]="text"></app-text-list-element>
             }
+            </ul>
         </div>
     }
     @case (contentTypeEnum.NO_DOTS) {
@@ -42,7 +44,7 @@
     }
     @case (contentTypeEnum.CAROUSEL) {
         <div class="image-display-all-02">
-            <app-carousel [imageList]="contentList()"></app-carousel>
+            <app-carousel [imageList]="contentList()" [id]="id() ?? 'carouselControls'"></app-carousel>
         </div>
     }
     @case (contentTypeEnum.COMPOSIT_CONTENT) {
@@ -75,6 +77,11 @@
                         @for (content of contentData.content; track content) {
                             <app-content [content]="content" [type]="content!.type"></app-content>
                         }
+                    </div>
+                }
+                @if(contentData?.table) {
+                    <div class="composit-table">
+                        <app-table [table]="contentData.table"></app-table>
                     </div>
                 }
             }

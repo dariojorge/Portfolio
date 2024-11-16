@@ -173,6 +173,7 @@
             ],
             "images": {
                 "type": "CAROUSEL",
+                "id": "game-concept-control",
                 "content": [
                     {
                         "id": "0",
@@ -270,6 +271,7 @@
         {
             "id": "problems-solutions",
             "title": "Problems & Solutions",
+            "type": "COMPOSIT_CONTENT",
             "content": [
                 {
                     "text": [
@@ -281,33 +283,32 @@
                     ]
                 },
                 {
-                    "columnText": {
-                        "type": "DOTS",
-                        "content": [
-                            {
-                                "title": "Types of furniture:",
-                                "text": [
-                                    "Box",
-                                    "Casket",
-                                    "Fall-front Cabinet",
-                                    "Single door Cabinet",
-                                    "Drawer",
-                                    "Missal Stand",
-                                    "Cabinet"
-                                ]
-                            },
-                            {
-                                "title": "Styles of furniture:",
-                                "text": [
-                                    "Indo-Portuguese",
-                                    "Mughal Influence",
-                                    "Singal-Portuguese",
-                                    "Southeast Asia",
-                                    "Namban"
-                                ]
-                            }
-                        ]
-                    }
+                    "content": [
+                        {
+                            "type": "DOTS",
+                            "title": "Types of furniture:",
+                            "text": [
+                                "Box",
+                                "Casket",
+                                "Fall-front Cabinet",
+                                "Single door Cabinet",
+                                "Drawer",
+                                "Missal Stand",
+                                "Cabinet"
+                            ]
+                        },
+                        {
+                            "type": "DOTS",
+                            "title": "Styles of furniture:",
+                            "text": [
+                                "Indo-Portuguese",
+                                "Mughal Influence",
+                                "Singal-Portuguese",
+                                "Southeast Asia",
+                                "Namban"
+                            ]
+                        }
+                    ]
                 },
                 {
                     "text": [
@@ -315,44 +316,62 @@
                     ]
                 },
                 {
-                    "table": [
-                        {
-                            "headers": [
-                                "Type",
-                                "Style"
+                    "table": {
+                        "headers": [
+                            "Type",
+                            "Style"
+                        ],
+                        "body": [
+                            [
+                                "Missal Stand",
+                                "Namban"
                             ],
-                            "body": [
-                                [
-                                    "Missal Stand",
-                                    "Cabinet",
-                                    "Casket",
-                                    "Fall-front Cabinet",
-                                    "Drawer",
-                                    "Box",
-                                    "Fall-front Cabinet",
-                                    "Box",
-                                    "Casket",
-                                    "Fall-front Cabinet",
-                                    "Single door Cabinet",
-                                    "Cabinet"
-                                ],
-                                [
-                                    "Namban",
-                                    "Singal-Portuguese",
-                                    "Mughal Influence",
-                                    "Namban",
-                                    "Indo-Portuguese",
-                                    "Southeast Asia",
-                                    "Mughal Influence",
-                                    "Singal-Portuguese",
-                                    "Indo-Portuguese",
-                                    "Namban",
-                                    "Mughal Influence",
-                                    "Indo-Portuguese"
-                                ]
+                            [
+                                "Cabinet",
+                                "Singal-Portuguese"
+                            ],
+                            [
+                                "Casket",
+                                "Mughal Influence"
+                            ],
+                            [
+                                "Fall-front Cabinet",
+                                "Namban"
+                            ],
+                            [
+                                "Drawer",
+                                "Indo-Portuguese"
+                            ],
+                            [
+                                "Box",
+                                "Southeast Asia"
+                            ],
+                            [
+                                "Fall-front Cabinet",
+                                "Mughal Influence"
+                            ],
+                            [
+                                "Box",
+                                "Singal-Portuguese"
+                            ],
+                            [
+                                "Casket",
+                                "Indo-Portuguese"
+                            ],
+                            [
+                                "Fall-front Cabinet",
+                                "Namban"
+                            ],
+                            [
+                                "Single door Cabinet",
+                                "Mughal Influence"
+                            ],
+                            [
+                                "Cabinet",
+                                "Indo-Portuguese"
                             ]
-                        }
-                    ]
+                        ]
+                    }
                 }
             ]
         },
@@ -364,23 +383,24 @@
                 "The tutorial is always available in the book."
             ],
             "images": {
-                "type": "2",
+                "type": "CAROUSEL",
+                "id": "guidance-carousel-control",
                 "content": [
                     {
                         "id": "0",
-                        "path": "image-not-found-icon.svg"
+                        "path": "unseen-value/image15.webp"
                     },
                     {
                         "id": "1",
-                        "path": "image-not-found-icon.svg"
+                        "path": "unseen-value/image16.webp"
                     },
                     {
                         "id": "2",
-                        "path": "image-not-found-icon.svg"
+                        "path": "unseen-value/image17.webp"
                     },
                     {
                         "id": "3",
-                        "path": "image-not-found-icon.svg"
+                        "path": "unseen-value/image18.webp"
                     }
                 ]
             }

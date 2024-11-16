@@ -3,5 +3,6 @@ import { ContentModel } from "./content.model";
 
 export interface ImageModel {
     type: ContentTypeEnum;
+    id: string;
     content: ContentModel[];
 }

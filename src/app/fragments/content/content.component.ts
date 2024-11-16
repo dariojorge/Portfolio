@@ -6,11 +6,12 @@ import { ImageDisplayAll01Component } from "../image-display-all-01/image-displa
 import { CarouselComponent } from "../carousel/carousel.component";
 import { TextComponent } from "../text/text.component";
 import { ImageCalculatorDirective } from 'src/app/directives/image-calculator/image-calculator.directive';
+import { TableComponent } from "../table/table.component";
 
 @Component({
   selector: 'app-content',
   standalone: true,
-  imports: [TextListElementComponent, ImageDisplayAll01Component, CarouselComponent, TextComponent, ImageCalculatorDirective],
+  imports: [TextListElementComponent, ImageDisplayAll01Component, CarouselComponent, TextComponent, ImageCalculatorDirective, TableComponent],
   templateUrl: './content.component.html',
   styleUrl: './content.component.css',
   encapsulation: ViewEncapsulation.None,
@@ -18,6 +19,7 @@ import { ImageCalculatorDirective } from 'src/app/directives/image-calculator/im
 export class ContentComponent {
   content = input<ContentModel>();
   contentList = input<ContentModel[]>();
+  id = input<string>();
   type = input.required<ContentTypeEnum>();
   contentTypeEnum = ContentTypeEnum;
   @ViewChild(ImageCalculatorDirective) getImageWidth: any;
