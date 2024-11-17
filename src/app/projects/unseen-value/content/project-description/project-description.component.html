@@ -1,9 +1,10 @@
-<div class="description-content">
-    <span class="description-title">{{projectDescription().title}}</span>
-    <div class="description">
+<div [class]="projectDescription().id">
+    <span [class]="projectDescription().id + '-title'">{{projectDescription().title}}</span>
+    <div [class]="projectDescription().id + '-text'">
         <app-text [text]="projectDescription().text"></app-text>
     </div>
-    <div>
-        <app-column-text [columnText]="projectDescription().columnText"></app-column-text>
+    <div [class]="projectDescription().id + '-content'">
+        <app-content [contentList]="projectDescription().content" [type]="projectDescription().type"
+            [id]="projectDescription().id"></app-content>
     </div>
 </div>

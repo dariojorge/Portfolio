@@ -1,9 +1,10 @@
-<div class="mechanics-content">
-    <span class="mechanics-title">{{mechanics().title}}</span>
-    <div class="mechanics">
+<div [class]="mechanics().id">
+    <span [class]="mechanics().id + '-title'">{{mechanics().title}}</span>
+    <div [class]="mechanics().id + '-text'">
         <app-text [text]="mechanics().text"></app-text>
     </div>
-    <div>
-        <app-column-text [columnText]="mechanics().columnText"></app-column-text>
+    <div [class]="mechanics().id + '-content'">
+        <app-content [contentList]="mechanics().content" [type]="mechanics().type"
+            [id]="mechanics().id"></app-content>
     </div>
 </div>

@@ -1,4 +1,4 @@
-.gameplay-narrative-progression-content {
+.gameplay-narrative-progression {
     padding: 0 12% 1% 12%;
 
     .gameplay-narrative-progression-title {
@@ -21,45 +21,44 @@
     }
 
     .gameplay-narrative-progression-content {
-        .images-style {
-            padding: 0 15% 1% 15%;
+        padding: 0 15% 1% 15%;
 
-            .composit-title {
-                margin-top: 40px;
-                margin-bottom: 10px;
+        .composit-title {
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
+
+        .composit-image-display-0 {
+            margin-bottom: 15px;
+        }
+
+        .composit-image-display-1 {
+            margin-bottom: 40px;
+        }
+
+        .composit-image-display-2 {
+            .composit-image-description-2 {
+                background-color: grey;
+
+                span {
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        .composit-content {
+            .text-list {
+                .text-list-without-dots {
+                    margin-bottom: 20px;
+
+                    li {
+                        margin-bottom: 15px;
+                    }
+                }
             }
 
-            .composit-image-display-0 {
+            .text-list-with-dots {
                 margin-bottom: 15px;
-            }
-
-            .composit-image-display-1 {
-                margin-bottom: 40px;
-            }
-
-            .composit-image-display-2 {
-                .composit-image-description-2 {
-                    background-color: grey;
-                    span {
-                        margin-left: 10px;
-                    }
-                }
-            }
-            
-            .composit-content {
-                .text-list {
-                    .text-list-without-dots {
-                        margin-bottom: 20px;
-
-                        li {
-                            margin-bottom: 15px;
-                        }
-                    }
-                }
-
-                .text-list-with-dots {
-                    margin-bottom: 15px;
-                }
             }
         }
     }

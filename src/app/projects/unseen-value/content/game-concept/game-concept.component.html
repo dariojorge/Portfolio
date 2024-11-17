@@ -1,9 +1,10 @@
-<div class="game-concept-content">
-    <span class="game-concept-title">{{gameConcept().title}}</span>
-    <div class="game-concept-text">
+<div [class]="gameConcept().id">
+    <span [class]="gameConcept().id + '-title'">{{gameConcept().title}}</span>
+    <div [class]="gameConcept().id + '-text'">
         <app-text [text]="gameConcept().text"></app-text>
     </div>
-    <div class="game-concept-content">
-        <app-images [images]="gameConcept().images"></app-images>
+    <div [class]="gameConcept().id + '-content'">
+        <app-content [contentList]="gameConcept().content" [type]="gameConcept().type"
+            [id]="gameConcept().id"></app-content>
     </div>
 </div>

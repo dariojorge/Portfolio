@@ -1,11 +1,11 @@
 import { Component, input, ViewEncapsulation } from '@angular/core';
 import { ProjectSecctionModel } from 'src/app/models/project/project-secction.model';
-import { ColumnTextComponent } from "../../../../fragments/column-text/column-text.component";
+import { ContentComponent } from "../../../../fragments/content/content.component";
 
 @Component({
   selector: 'app-contribuitions',
   standalone: true,
-  imports: [ColumnTextComponent],
+  imports: [ContentComponent],
   templateUrl: './contribuitions.component.html',
   styleUrl: './contribuitions.component.css',
   encapsulation: ViewEncapsulation.None

@@ -1,4 +1,4 @@
-.guidance-content {
+.guidance {
     padding: 0 12% 1% 12%;
 
     .guidance-title {
@@ -17,6 +17,15 @@
             span {
                 margin-bottom: 20px;
             }
+        }
+    }
+
+    .guidance-content {
+        .images-style {
+            display: grid;
+            justify-content: center;
+
+            
         }
     }
 }

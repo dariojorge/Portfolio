@@ -1,6 +1,7 @@
-<div class="description-content">
-    <span class="description-title">{{contributions().title}}</span>
-    <div class="contribuition-content">
-        <app-column-text [columnText]="contributions().columnText"></app-column-text>
+<div [class]="contributions().id">
+    <span [class]="contributions().id + '-title'">{{contributions().title}}</span>
+    <div [class]="contributions().id + '-content'">
+        <app-content [contentList]="contributions().content" [type]="contributions().type"
+            [id]="contributions().id"></app-content>
     </div>
 </div>

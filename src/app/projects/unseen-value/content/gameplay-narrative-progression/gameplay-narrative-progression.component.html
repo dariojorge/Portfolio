@@ -1,9 +1,10 @@
-<div [class]="gameplayNarrativeProgression().id + '-content'">
+<div [class]="gameplayNarrativeProgression().id">
     <span [class]="gameplayNarrativeProgression().id + '-title'">{{gameplayNarrativeProgression().title}}</span>
     <div [class]="gameplayNarrativeProgression().id + '-text'">
         <app-text [text]="gameplayNarrativeProgression().text"></app-text>
     </div>
     <div [class]="gameplayNarrativeProgression().id + '-content'">
-        <app-images [images]="gameplayNarrativeProgression().images"></app-images>
+        <app-content [contentList]="gameplayNarrativeProgression().content" [type]="gameplayNarrativeProgression().type"
+            [id]="gameplayNarrativeProgression().id"></app-content>
     </div>
 </div>

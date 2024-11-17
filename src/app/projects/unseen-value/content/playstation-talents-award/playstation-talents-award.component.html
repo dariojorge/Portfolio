@@ -1,9 +1,10 @@
-<div class="description-content">
-    <span class="description-title">{{playstationTalentsAwards().title}}</span>
-    <div class="description">
+<div [class]="playstationTalentsAwards().id">
+    <span [class]="playstationTalentsAwards().id + '-title'">{{playstationTalentsAwards().title}}</span>
+    <div [class]="playstationTalentsAwards().id + '-text'">
         <app-text [text]="playstationTalentsAwards().text"></app-text>
     </div>
-    <div>
-        <app-images [images]="playstationTalentsAwards().images"></app-images>
+    <div [class]="playstationTalentsAwards().id + '-content'">
+        <app-content [contentList]="playstationTalentsAwards().content" [type]="playstationTalentsAwards().type"
+            [id]="playstationTalentsAwards().id"></app-content>
     </div>
 </div>
