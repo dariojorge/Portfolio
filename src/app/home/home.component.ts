@@ -26,7 +26,7 @@ export class HomeComponent {
         this.headerSize = size + this.sharedDataService.offsetHeight;
         this.changeDetectorRef.detectChanges();
       });
-      this.sharedDataService.projectWrapperBehavior.subscribe((projectWrapper: ProjectWrapperModel) => {
+      this.sharedDataService.homeWrapperBehavior.subscribe((projectWrapper: ProjectWrapperModel) => {
         this.projectWrapper = projectWrapper;
         this.changeDetectorRef.detectChanges();
       });
