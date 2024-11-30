@@ -28,8 +28,8 @@
                 justify-content: center;
                 grid-template-columns: 400px 400px 400px;
 
-                .text-list {
-                    .sub-title {
+                .text-list-element {
+                    .title {
                         display: grid;
                         justify-content: center;
                         font-size: 25px;
@@ -37,7 +37,7 @@
                         margin-bottom: 20px;
                     }
 
-                    .image-display-0 {
+                    .image-display {
                         display: grid;
                         justify-content: center;
 
@@ -48,7 +48,7 @@
 
                     }
 
-                    .text-list-without-dots {
+                    .element {
                         padding: 0 10% 0 10%;
 
                         li {

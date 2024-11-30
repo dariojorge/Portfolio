@@ -1,0 +1,48 @@
+.other-projects {
+    padding: 0 12% 1% 12%;
+
+    .other-projects-title {
+        display: flex;
+        justify-content: center;
+        font-size: 45px;
+        font-weight: 500;
+        margin-bottom: 25px;
+    }
+
+    .other-projects-text {
+        margin-bottom: 25px;
+    }
+
+    .other-projects-content {
+        padding-bottom: 15px;
+
+        .show-case {
+            .show-case-container {
+                display: grid;
+                justify-content: center;
+                grid-template-columns: 105px 400px;
+                margin-bottom: 10px;
+
+                .image-display {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+
+                    img {
+                        border-color: rgb(0, 0, 0);
+                        border-style: solid;
+                        border-width: 1px;
+                        border-radius: 0px;
+                    }
+                }
+
+                .show-case-content {
+                    .text {
+                        display: grid;
+                    }
+                }
+            }
+        }
+    }
+}

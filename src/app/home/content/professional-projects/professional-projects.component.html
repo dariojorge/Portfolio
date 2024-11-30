@@ -1,0 +1,10 @@
+<div [class]="profissionalProjects().id">
+    <span [class]="profissionalProjects().id + '-title'">{{profissionalProjects().title}}</span>
+    <div [class]="profissionalProjects().id + '-text'">
+        <app-text [text]="profissionalProjects().text"></app-text>
+    </div>
+    <div [class]="profissionalProjects().id + '-content'">
+        <app-content [contentList]="profissionalProjects().content" [type]="profissionalProjects().type"
+            [id]="profissionalProjects().id"></app-content>
+    </div>
+</div>

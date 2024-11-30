@@ -1,0 +1,10 @@
+<div [class]="otherProjects().id">
+    <span [class]="otherProjects().id + '-title'">{{otherProjects().title}}</span>
+    <div [class]="otherProjects().id + '-text'">
+        <app-text [text]="otherProjects().text"></app-text>
+    </div>
+    <div [class]="otherProjects().id + '-content'">
+        <app-content [contentList]="otherProjects().content" [type]="otherProjects().type"
+            [id]="otherProjects().id"></app-content>
+    </div>
+</div>

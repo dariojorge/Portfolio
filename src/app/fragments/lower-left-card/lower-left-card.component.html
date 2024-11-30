@@ -1,0 +1,12 @@
+<div class="lower-left-card">
+    @if(content()!.path) {
+        <div class="card-image">
+            <img src="assets/{{content()!.path}}" />
+        </div>
+    }
+    @if(content()!.title) {
+        <div class="card-title">
+            <span>{{content().title}}</span>
+        </div>
+    }
+</div>

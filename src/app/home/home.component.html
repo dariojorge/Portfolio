@@ -1,5 +1,14 @@
 <div class="content" [ngStyle]="{'padding-top': headerSize + 'px'}">
-    @if (projectWrapper !== undefined) {
+    @if (projectModel !== undefined) {
+        <app-intro [intro]="intro"></app-intro>
+        <hr>
+        <app-professional-projects [profissionalProjects]="professionalProjects"></app-professional-projects>
+        <hr>
+        <app-personal-projects [personalProjects]="personalProjects"></app-personal-projects>
+        <hr>
+        <app-other-projects [otherProjects]="otherProjects"></app-other-projects>
+    }
+    <!-- @if (projectWrapper !== undefined) {
     <section class="home-introdution">
         <h4>{{projectWrapper.introduction.title}}</h4>
         <p>{{projectWrapper.introduction.description}}</p>
@@ -37,5 +46,5 @@
         }
     </section>
     }
-    }
+    } -->
 </div>

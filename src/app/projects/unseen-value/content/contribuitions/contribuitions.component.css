@@ -16,10 +16,17 @@
                 justify-content: center;
                 grid-template-columns: 300px 300px 300px;
 
-                .text-list-with-dots {
-                    span {
-                        font-size: 25px;
-                        font-weight: bold;
+                .dots {
+                    .title {
+                        display: flex;
+                        justify-content: center;
+                    }
+
+                    .text-list-element {
+                        span {
+                            font-size: 25px;
+                            font-weight: bold;
+                        }
                     }
                 }
             }

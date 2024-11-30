@@ -1,4 +1,5 @@
 import { Component, input, ViewEncapsulation } from '@angular/core';
+import { PlayButtonModel } from 'src/app/models/project/play-button.model';
 import { ProjectSecctionModel } from 'src/app/models/project/project-secction.model';
 
 @Component({
@@ -10,7 +11,7 @@ import { ProjectSecctionModel } from 'src/app/models/project/project-secction.mo
   encapsulation: ViewEncapsulation.None
 })
 export class PlayButtonComponent {
-  playButtonUrl = input.required<ProjectSecctionModel>();
+  playButtonUrl = input.required<PlayButtonModel>();
 
   constructor() {}
 }

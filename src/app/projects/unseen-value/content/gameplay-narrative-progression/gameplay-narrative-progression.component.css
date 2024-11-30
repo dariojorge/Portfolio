@@ -47,18 +47,32 @@
         }
 
         .composit-content {
-            .text-list {
-                .text-list-without-dots {
-                    margin-bottom: 20px;
+            .dots {
+                .text-list-element {
+                    .element {
+                        margin-bottom: 20px;
 
-                    li {
-                        margin-bottom: 15px;
+                        li {
+                            margin-bottom: 15px;
+                        }
                     }
                 }
             }
 
-            .text-list-with-dots {
-                margin-bottom: 15px;
+            .no-dots {
+                .text-list-element {
+                    .element {
+                        margin-bottom: 20px;
+
+                        ul {
+                            padding-left: 0px;
+                        }
+
+                        li {
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
             }
         }
     }

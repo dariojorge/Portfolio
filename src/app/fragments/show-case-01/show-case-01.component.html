@@ -1,0 +1,18 @@
+<div class="show-case-01">
+    @if(contentList()) {
+        @for (contentData of contentList(); track contentData) {
+            <div class="show-case-content">
+                <div class="show-case-container" [ngStyle]="contentData.path ? {'background-image': 'url(assets/' + contentData.path + ')'}  : {'background-color': 'blue'}">
+                    <a class="img" routerLink="/project/{{ contentData.pageId }}" routerLinkActive="active"></a>
+                    <div class="composit-content">
+                        @for (content of contentData.content; track content) {
+                            @if(content.type) {
+                                <app-content [content]="content" [type]="content.type"></app-content>
+                            }
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>

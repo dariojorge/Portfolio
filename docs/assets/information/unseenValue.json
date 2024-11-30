@@ -12,7 +12,8 @@
             "id": "play-button",
             "playButton": {
                 "url": "https://marema-studios.itch.io/unseen-value",
-                "buttonText": "Play Here!"
+                "buttonText": "Play Here!",
+                "defaultStyle": "btn btn-primary"
             }
         },
         {

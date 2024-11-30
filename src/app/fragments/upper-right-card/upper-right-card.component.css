@@ -1,0 +1,31 @@
+.upper-right-card {
+    position: absolute;
+    border-width: 1px 1px 1px 1px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+
+    right: 24%;
+    width: 15%;
+    margin-right: 5px;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+
+    .card-title {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .card-text {
+        .text {
+            span{
+                display: grid;
+                justify-content: center;
+            }
+        }
+    }
+}

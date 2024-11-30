@@ -1,1 +1,19 @@
-<li [innerHTML]="text() | bold"></li>
+<div class="text-list-element">
+    @if(content().path) {
+        <div class="image-display">
+            <img src="assets/{{content().path}}" />
+        </div>
+    }
+    @if(content().title) {
+        <div class="title">
+            <span>{{content().title}}</span>
+        </div>
+    }
+    <div class="element">
+        <ul>
+            @for (text of content().text; track text) {
+                <li [innerHTML]="text | bold"></li>
+            }
+        </ul>
+    </div>
+</div>

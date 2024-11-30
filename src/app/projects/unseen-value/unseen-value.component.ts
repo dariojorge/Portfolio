@@ -14,6 +14,7 @@ import { GameConceptComponent } from "./content/game-concept/game-concept.compon
 import { GameplayNarrativeProgressionComponent } from "./content/gameplay-narrative-progression/gameplay-narrative-progression.component";
 import { ProblemsSolutionsComponent } from "./content/problems-solutions/problems-solutions.component";
 import { GuidanceComponent } from "./content/guidance/guidance.component";
+import { PlayButtonModel } from 'src/app/models/project/play-button.model';
 
 @Component({
   selector: 'app-unseen-value',
@@ -27,7 +28,7 @@ export class UnseenValueComponent {
   headerSize: number = 0;
   projectModel!: ProjectModel;
   playVideo!: ProjectSecctionModel;
-  playButton!: ProjectSecctionModel;
+  playButton!: PlayButtonModel;
   projectDescription!: ProjectSecctionModel;
   playstationTalentsAwards!: ProjectSecctionModel;
   contributions!: ProjectSecctionModel;
@@ -51,7 +52,7 @@ export class UnseenValueComponent {
       this.sharedDataService.projectWrapperBehavior.subscribe((projectModel: ProjectModel) => {
         this.projectModel = projectModel;
         this.playVideo = this.findSecctionById(projectModel, "play-video");
-        this.playButton = this.findSecctionById(projectModel, "play-button");
+        this.playButton = this.findSecctionById(projectModel, "play-button").playButton;
         this.projectDescription = this.findSecctionById(projectModel, "project-description");
         this.playstationTalentsAwards = this.findSecctionById(projectModel, "playstation-talents-awards");
         this.contributions = this.findSecctionById(projectModel, "contributions");

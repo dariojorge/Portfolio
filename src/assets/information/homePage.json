@@ -1,89 +1,226 @@
 {
-    "introduction": {
-        "title": "Hello and welcome to my portfolio!",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-    },
+    "id": "home",
     "secctions": [
         {
-            "title": "PROJECTS",
-            "components": [
+            "id": "intro",
+            "title": "Hello and welcome to my portfolio!",
+            "text": [
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            ]
+        },
+        {
+            "id": "professional-projects",
+            "title": "Professional Projects",
+            "type": "SHOW_CASE_01",
+            "content": [
                 {
-                    "title": "Project 1",
-                    "pageId": "project1",
-                    "imgPath": "image-not-found-icon.svg",
-                    "subTitle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                    "id": "0",
+                    "pageId": "undisclosed-01",
+                    "content": [
+                        {
+                            "type": "UPPER_RIGHT_CARD",
+                            "title": "The Gang Sweden AB",
+                            "text": [
+                                "Game Designer",
+                                "2024"
+                            ]
+                        },
+                        {
+                            "type": "LOWER_LEFT_TITLE",
+                            "title": "Undisclosed Project"
+                        }
+                    ]
                 },
                 {
-                    "title": "Unseen Value",
+                    "id": "1",
+                    "pageId": "nhl",
+                    "path": "home/nhl.jpg",
+                    "content": [
+                        {
+                            "type": "UPPER_RIGHT_CARD",
+                            "title": "The Gang Sweden AB",
+                            "text": [
+                                "Game Designer",
+                                "Apr 2024 - Nov 2024"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "pageId": "eldritch-house",
+                    "path": "home/eldritch_house.jpg",
+                    "content": [
+                        {
+                            "type": "UPPER_RIGHT_CARD",
+                            "title": "Spooky Doorway",
+                            "text": [
+                                "Game Designer",
+                                "Feb 2024 - Now"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "3",
+                    "pageId": "undisclosed-02",
+                    "content": [
+                        {
+                            "type": "UPPER_RIGHT_CARD",
+                            "title": "The Gang Sweden AB",
+                            "text": [
+                                "Game Designer",
+                                "2024"
+                            ]
+                        },
+                        {
+                            "type": "LOWER_LEFT_TITLE",
+                            "title": "Undisclosed Project"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "personal-projects",
+            "title": "Personal Projects",
+            "type": "SHOW_CASE_01",
+            "content": [
+                {
+                    "id": "0",
                     "pageId": "unseen-value",
-                    "imgPath": "image-not-found-icon.svg",
-                    "subTitle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                    "path": "home/unseen_value.jpg",
+                    "content": [
+                        {
+                            "type": "UPPER_RIGHT_CARD",
+                            "title": "Marema Studios",
+                            "text": [
+                                "Game Designer",
+                                "2023"
+                            ]
+                        },
+                        {
+                            "id": 0,
+                            "type": "LOWER_LEFT_TITLE",
+                            "path": "home/playstation_talents.png"
+                        }
+                    ]
                 },
                 {
-                    "title": "Project 3",
-                    "pageId": "project3",
-                    "imgPath": "image-not-found-icon.svg",
-                    "subTitle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                    "id": "0",
+                    "pageId": "bracara-augusta",
+                    "path": "home/bracara_augusta.jpg",
+                    "content": [
+                        {
+                            "type": "UPPER_RIGHT_CARD",
+                            "title": "Marema Studios",
+                            "text": [
+                                "Game Designer",
+                                "2022"
+                            ]
+                        },
+                        {
+                            "id": 0,
+                            "type": "LOWER_LEFT_TITLE",
+                            "path": "home/playstation_talents.png"
+                        }
+                    ]
                 }
             ]
         },
         {
-            "title": "PERSONAL PROJECTS",
-            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-            "components": [
+            "id": "other-projects",
+            "title": "Other Projects",
+            "type": "SHOW_CASE_02",
+            "content": [
                 {
-                    "title": "Personal Project 1",
-                    "pageId": "personalProject1",
-                    "imgPath": "image-not-found-icon.svg",
-                    "subTitle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                    "id": "0",
+                    "pageId": "deaths",
+                    "path": "home/deaths.jpg",
+                    "title": "Death's Happy Hour (2024) - Global Game Jam 48h",
+                    "content": [
+                        {
+                            "text": [
+                                "Winner of the 2nd Place - Leiria, Portugal"
+                            ]
+                        },
+                        {
+                            "text": [
+                                "*Role:* Game Designer",
+                                "*Engine:* GB Studio"
+                            ]
+                        },
+                        {
+                            "id": "play-button",
+                            "playButton": {
+                                "url": "https://marema-studios.itch.io/unseen-value",
+                                "buttonText": "Play Here!"
+                            }
+                        }
+                    ]
                 },
                 {
-                    "title": "Personal Project 2",
-                    "pageId": "personalProject2",
-                    "imgPath": "image-not-found-icon.svg",
-                    "subTitle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                    "id": "1",
+                    "pageId": "confined-steal",
+                    "path": "home/confined_steal.png",
+                    "title": "Confined Steal (2023) - GB Jam11 48h",
+                    "content": [
+                        {
+                            "text": [
+                                "*Role:* Game Designer",
+                                "*Engine:* Unity"
+                            ]
+                        },
+                        {
+                            "id": "play-button",
+                            "playButton": {
+                                "url": "https://marema-studios.itch.io/confined-steal",
+                                "buttonText": "Play Here!"
+                            }
+                        }
+                    ]
                 },
                 {
-                    "title": "Personal Project 3",
-                    "pageId": "personalProject3",
-                    "imgPath": "image-not-found-icon.svg",
-                    "subTitle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-                }
-            ]
-        },
-        {
-            "title": "OTHER PROJECTS",
-            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-            "components": [
-                {
-                    "title": "Other Project 1",
-                    "pageId": "otherProject1",
-                    "imgPath": "image-not-found-icon.svg",
-                    "details": {
-                        "engine": "Lorem Ipsum",
-                        "studio": "Lorem Ipsum",
-                        "description": "Lorem Ipsum"
-                    }
+                    "id": "2",
+                    "pageId": "frog-hops",
+                    "path": "home/frog_hops.jpg",
+                    "title": "Frog Hops (2022) - Table top",
+                    "content": [
+                        {
+                            "text": [
+                                "*Role:* Game Designer",
+                                "*Target Audience:* Children between 7-12"
+                            ]
+                        },
+                        {
+                            "id": "play-button",
+                            "playButton": {
+                                "url": "https://marema-studios.itch.io/frog-hops",
+                                "buttonText": "Play Here!"
+                            }
+                        }
+                    ]
                 },
                 {
-                    "title": "Other Project 2",
-                    "pageId": "otherProject2",
-                    "imgPath": "image-not-found-icon.svg",
-                    "details": {
-                        "engine": "Lorem Ipsum",
-                        "studio": "Lorem Ipsum",
-                        "description": "Lorem Ipsum"
-                    }
-                },
-                {
-                    "title": "Other Project 3",
-                    "pageId": "otherProject3",
-                    "imgPath": "image-not-found-icon.svg",
-                    "details": {
-                        "engine": "Lorem Ipsum",
-                        "studio": "Lorem Ipsum",
-                        "description": "Lorem Ipsum"
-                    }
+                    "id": "3",
+                    "pageId": "frog-hops",
+                    "path": "home/attw.png",
+                    "title": "Adventure Through the Wind (2022)",
+                    "content": [
+                        {
+                            "text": [
+                                "*Role:* Game Designer",
+                                "*Engine:* GB Studio"
+                            ]
+                        },
+                        {
+                            "id": "play-button",
+                            "playButton": {
+                                "url": "https://marema-studios.itch.io/adventure-through-the-wind",
+                                "buttonText": "Play Here!"
+                            }
+                        }
+                    ]
                 }
             ]
         }

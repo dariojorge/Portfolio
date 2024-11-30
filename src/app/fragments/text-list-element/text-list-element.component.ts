@@ -1,4 +1,5 @@
 import { Component, input, ViewEncapsulation } from '@angular/core';
+import { ContentModel } from 'src/app/models/project/content.model';
 import { BoldPipe } from 'src/app/pipes/bold.pipe';
 
 @Component({
@@ -10,7 +11,7 @@ import { BoldPipe } from 'src/app/pipes/bold.pipe';
   encapsulation: ViewEncapsulation.None
 })
 export class TextListElementComponent {
-  text = input.required<string>();
+  content = input.required<ContentModel>();
 
   constructor() {}
 }

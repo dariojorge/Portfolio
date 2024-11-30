@@ -1,33 +1,12 @@
 @switch (type()) {
     @case (contentTypeEnum.DOTS) {
-        <div class="text-list-with-dots">
-            @if(content()?.title) {
-                <span>{{content()?.title}}</span>
-            }
-            <ul>
-            @for (text of content()!.text; track text) {
-                <app-text-list-element [text]="text"></app-text-list-element>
-            }
-            </ul>
+        <div class="dots">
+            <app-text-list-element [content]="content()!"></app-text-list-element>
         </div>
     }
     @case (contentTypeEnum.NO_DOTS) {
-        <div class="text-list">
-            @if(content()?.path) {
-                <div [class]="'image-display-' + content()?.id">
-                    <img src="assets/{{content()?.path}}" />
-                </div>
-            }
-            @if(content()?.title) {
-                <div class="sub-title">
-                    <span>{{content()?.title}}</span>
-                </div>
-            }
-            <div class="text-list-without-dots">
-                @for (text of content()!.text; track text) {
-                    <app-text-list-element [text]="text"></app-text-list-element>
-                }
-            </div>
+        <div class="no-dots">
+            <app-text-list-element [content]="content()!"></app-text-list-element>
         </div>
     }
     @case (contentTypeEnum.IMAGE_DISPLAY_ALL_01) {
@@ -43,9 +22,7 @@
         </div>
     }
     @case (contentTypeEnum.CAROUSEL) {
-        <div class="carousel-content">
-            <app-carousel [imageList]="contentList()" [id]="id() ?? 'carouselControls'"></app-carousel>
-        </div>
+        <app-carousel [imageList]="contentList()" [id]="id() ?? 'carouselControls'"></app-carousel>
     }
     @case (contentTypeEnum.COMPOSIT_CONTENT) {
         <div class="composit">
@@ -86,6 +63,67 @@
                 }
             }
         </div>
+    }
+    @case (contentTypeEnum.SHOW_CASE_01) {
+        <div class="show-case-01">
+            @if(contentList()) {
+                @for (contentData of contentList(); track contentData) {
+                    <div class="show-case-content">
+                        <div class="show-case-container" [ngStyle]="contentData.path ? {'background-image': 'url(assets/' + contentData.path + ')'}  : {'background-color': 'blue'}">
+                            <a class="img" routerLink="/project/{{ contentData.pageId }}" routerLinkActive="active"></a>
+                            <div class="composit-content">
+                                @for (content of contentData.content; track content) {
+                                    @if(content.type) {
+                                        <app-content [content]="content" [type]="content.type"></app-content>
+                                    }
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    }
+    @case (contentTypeEnum.SHOW_CASE_02) {
+        <div class="show-case">
+            @if(contentList()) {
+                @for (contentData of contentList(); track contentData) {
+                    <div class="show-case-container">
+                        @if(contentData.path) {
+                            <div class="image-display">
+                                <img src="assets/{{contentData.path}}" />
+                            </div>
+                        }
+                        <div class="show-case-content">
+                            @if(contentData?.title) {
+                                <div class="title">
+                                    <span>{{contentData?.title}}</span>
+                                </div>
+                            }
+                            @if(contentData?.content) {
+                                @for (content of contentData.content; track content) {
+                                    @if(content?.text) {
+                                        <div class="text">
+                                            <app-text [text]="content.text"></app-text>
+                                        </div>
+                                    }
+                                    @if(content?.playButton) {
+                                        <app-play-button [playButtonUrl]="content.playButton"></app-play-button>
+                                    }
+                                }
+                            }
+                        </div>
+                    </div>
+                    <!-- <app-show-case-02 [content]="contentData"></app-show-case-02> -->
+                }
+            }
+        </div>
+    }
+    @case (contentTypeEnum.UPPER_RIGHT_CARD) {
+        <app-upper-right-card [content]="content()!"></app-upper-right-card>
+    }
+    @case (contentTypeEnum.LOWER_LEFT_TITLE) {
+        <app-lower-left-card [content]="content()!"></app-lower-left-card>
     }
     @default {
       Default case.

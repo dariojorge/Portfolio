@@ -1,5 +1,6 @@
 import { TableModel } from "./table.model";
 import { ContentTypeEnum } from "../content-type-enum";
+import { PlayButtonModel } from "./play-button.model";
 
 export interface ContentModel {
     type: ContentTypeEnum;
@@ -10,4 +11,6 @@ export interface ContentModel {
     text: string[];
     table: TableModel;
     content: ContentModel[];
+    pageId: string;
+    playButton: PlayButtonModel;
 }

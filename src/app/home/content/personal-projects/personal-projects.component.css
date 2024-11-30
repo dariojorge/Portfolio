@@ -1,0 +1,54 @@
+.personal-projects {
+    padding: 0 12% 1% 12%;
+
+    .personal-projects-title {
+        display: flex;
+        justify-content: center;
+        font-size: 45px;
+        font-weight: 500;
+        margin-bottom: 25px;
+    }
+
+    .personal-projects-text {
+        margin-bottom: 25px;
+    }
+
+    .personal-projects-content {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 15px;
+
+        .show-case-content {
+            margin-bottom: 10px;
+            width: 980px;
+            height: 350px;
+
+            .show-case-container {
+                display: flex;
+                justify-content: center;
+
+                border-color: rgb(0, 0, 0);
+                border-style: solid;
+                border-width: 3px;
+                border-radius: 0px;
+
+                background-color: transparent;
+                /* background-position: center top; */
+                background-size: cover;
+                background-repeat: no-repeat;
+
+                .img {
+                    height: 100%;
+                    width: 100%;
+                    min-height: 342px;
+                    cursor: pointer;
+                }
+
+                a:hover {
+                    background-color: rgba(255, 255, 255, 0.5);
+                    z-index: 10;
+                }
+            }
+        }
+    }
+}

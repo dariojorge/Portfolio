@@ -30,12 +30,18 @@
         justify-content: center;
         grid-template-columns: 400px 400px;
 
-        .text-list-with-dots {
-            margin-bottom: 20px;
+        .dots {
+            .text-list-element {
+                .title {
+                    span {
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
+                }
 
-            span {
-                font-size: 20px;
-                font-weight: bold;
+                .element {
+                    margin-bottom: 20px;
+                }
             }
         }
     }
