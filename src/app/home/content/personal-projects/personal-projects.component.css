@@ -21,9 +21,10 @@
         .show-case-content {
             margin-bottom: 10px;
             width: 980px;
-            height: 350px;
+            height: 301px;
 
             .show-case-container {
+                position: relative;
                 display: flex;
                 justify-content: center;
 
@@ -33,14 +34,23 @@
                 border-radius: 0px;
 
                 background-color: transparent;
-                /* background-position: center top; */
-                background-size: cover;
+                background-size: auto;
                 background-repeat: no-repeat;
+                height: 100%;
+
+                .lower-left-card {
+                    left: 15px;
+                    bottom: 15px;
+                }
+
+                .upper-right-card {
+                    right: 0;
+                    top: 0;
+                }
 
                 .img {
                     height: 100%;
                     width: 100%;
-                    min-height: 342px;
                     cursor: pointer;
                 }
 
