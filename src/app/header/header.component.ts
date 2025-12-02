@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { ChangeDetectorRef, Component, ElementRef, ViewChild, ViewEncapsulation } from '@angular/core';
 import { SharedDataService } from '../services/shared-data.service';
 import { RouterLink, RouterLinkActive } from '@angular/router';
@@ -6,7 +6,7 @@ import { HeaderWrapperModel } from '../models/header-wrapper';
 
 @Component({
     selector: 'app-header',
-    imports: [CommonModule, RouterLink, RouterLinkActive],
+    imports: [RouterLink, RouterLinkActive],
     templateUrl: './header.component.html',
     styleUrl: './header.component.css',
     encapsulation: ViewEncapsulation.None
