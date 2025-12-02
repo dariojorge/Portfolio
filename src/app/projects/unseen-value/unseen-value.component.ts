@@ -17,12 +17,11 @@ import { GuidanceComponent } from "./content/guidance/guidance.component";
 import { PlayButtonModel } from 'src/app/models/project/play-button.model';
 
 @Component({
-  selector: 'app-unseen-value',
-  standalone: true,
-  imports: [CommonModule, PlayVideoComponent, PlayButtonComponent, ProjectDescriptionComponent, PlaystationTalentsAwardComponent, ContribuitionsComponent, GameplayComponent, MechanicsComponent, GameConceptComponent, GameplayNarrativeProgressionComponent, ProblemsSolutionsComponent, GuidanceComponent],
-  templateUrl: './unseen-value.component.html',
-  styleUrl: './unseen-value.component.css',
-  encapsulation: ViewEncapsulation.None
+    selector: 'app-unseen-value',
+    imports: [CommonModule, PlayVideoComponent, PlayButtonComponent, ProjectDescriptionComponent, PlaystationTalentsAwardComponent, ContribuitionsComponent, GameplayComponent, MechanicsComponent, GameConceptComponent, GameplayNarrativeProgressionComponent, ProblemsSolutionsComponent, GuidanceComponent],
+    templateUrl: './unseen-value.component.html',
+    styleUrl: './unseen-value.component.css',
+    encapsulation: ViewEncapsulation.None
 })
 export class UnseenValueComponent {
   headerSize: number = 0;

@@ -4,11 +4,10 @@ import { ProjectDetailWrapperModel } from 'src/app/models/project-detail-wrapper
 import { SharedDataService } from 'src/app/services/shared-data.service';
 
 @Component({
-  selector: 'app-project1',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './project1.component.html',
-  styleUrl: './project1.component.css'
+    selector: 'app-project1',
+    imports: [CommonModule],
+    templateUrl: './project1.component.html',
+    styleUrl: './project1.component.css'
 })
 export class Project1Component {
   headerSize: number = 0;

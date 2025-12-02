@@ -3,12 +3,11 @@ import { Component, input, ViewEncapsulation } from '@angular/core';
 import { ContentModel } from 'src/app/models/project/content.model';
 
 @Component({
-  selector: 'app-carousel',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './carousel.component.html',
-  styleUrl: './carousel.component.css',
-  encapsulation: ViewEncapsulation.None
+    selector: 'app-carousel',
+    imports: [CommonModule],
+    templateUrl: './carousel.component.html',
+    styleUrl: './carousel.component.css',
+    encapsulation: ViewEncapsulation.None
 })
 export class CarouselComponent {
   imageList = input<ContentModel[]>();

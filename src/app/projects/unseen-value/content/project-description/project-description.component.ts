@@ -4,12 +4,11 @@ import { TextComponent } from "../../../../fragments/text/text.component";
 import { ContentComponent } from "../../../../fragments/content/content.component";
 
 @Component({
-  selector: 'app-project-description',
-  standalone: true,
-  imports: [TextComponent, ContentComponent],
-  templateUrl: './project-description.component.html',
-  styleUrl: './project-description.component.css',
-  encapsulation: ViewEncapsulation.None
+    selector: 'app-project-description',
+    imports: [TextComponent, ContentComponent],
+    templateUrl: './project-description.component.html',
+    styleUrl: './project-description.component.css',
+    encapsulation: ViewEncapsulation.None
 })
 export class ProjectDescriptionComponent {
   projectDescription = input.required<ProjectSecctionModel>();

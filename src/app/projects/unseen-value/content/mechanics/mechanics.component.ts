@@ -4,12 +4,11 @@ import { ContentComponent } from "../../../../fragments/content/content.componen
 import { TextComponent } from "../../../../fragments/text/text.component";
 
 @Component({
-  selector: 'app-mechanics',
-  standalone: true,
-  imports: [ContentComponent, TextComponent],
-  templateUrl: './mechanics.component.html',
-  styleUrl: './mechanics.component.css',
-  encapsulation: ViewEncapsulation.None
+    selector: 'app-mechanics',
+    imports: [ContentComponent, TextComponent],
+    templateUrl: './mechanics.component.html',
+    styleUrl: './mechanics.component.css',
+    encapsulation: ViewEncapsulation.None
 })
 export class MechanicsComponent {
   mechanics = input.required<ProjectSecctionModel>();

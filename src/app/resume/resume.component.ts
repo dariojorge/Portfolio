@@ -3,12 +3,11 @@ import { SharedDataService } from '../services/shared-data.service';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-resume',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './resume.component.html',
-  styleUrl: './resume.component.css',
-  encapsulation: ViewEncapsulation.None
+    selector: 'app-resume',
+    imports: [CommonModule],
+    templateUrl: './resume.component.html',
+    styleUrl: './resume.component.css',
+    encapsulation: ViewEncapsulation.None
 })
 export class ResumeComponent {
   headerSize: number = 0;

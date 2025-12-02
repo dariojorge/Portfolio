@@ -5,12 +5,11 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 import { HeaderWrapperModel } from '../models/header-wrapper';
 
 @Component({
-  selector: 'app-header',
-  standalone: true,
-  imports: [CommonModule, RouterLink, RouterLinkActive],
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.css',
-  encapsulation: ViewEncapsulation.None
+    selector: 'app-header',
+    imports: [CommonModule, RouterLink, RouterLinkActive],
+    templateUrl: './header.component.html',
+    styleUrl: './header.component.css',
+    encapsulation: ViewEncapsulation.None
 })
 export class HeaderComponent {
   headerWrapper!: HeaderWrapperModel;

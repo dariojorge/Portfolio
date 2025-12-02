@@ -10,12 +10,11 @@ import { OtherProjectsComponent } from "./content/other-projects/other-projects.
 import { IntroComponent } from "./content/intro/intro.component";
 
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [CommonModule, ProfissionalProjectsComponent, PersonalProjectsComponent, OtherProjectsComponent, IntroComponent],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css',
-  encapsulation: ViewEncapsulation.None
+    selector: 'app-home',
+    imports: [CommonModule, ProfissionalProjectsComponent, PersonalProjectsComponent, OtherProjectsComponent, IntroComponent],
+    templateUrl: './home.component.html',
+    styleUrl: './home.component.css',
+    encapsulation: ViewEncapsulation.None
 })
 export class HomeComponent {
   headerSize: number = 0;

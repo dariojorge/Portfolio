@@ -14,12 +14,11 @@ import { RouterLink } from '@angular/router';
 import { PlayButtonComponent } from "../play-button/play-button.component";
 
 @Component({
-  selector: 'app-content',
-  standalone: true,
-  imports: [TextListElementComponent, ImageDisplayAll01Component, CarouselComponent, TextComponent, ImageCalculatorDirective, TableComponent, CommonModule, LowerLeftCardComponent, UpperRightCardComponent, RouterLink, RouterLink, PlayButtonComponent],
-  templateUrl: './content.component.html',
-  styleUrl: './content.component.css',
-  encapsulation: ViewEncapsulation.None
+    selector: 'app-content',
+    imports: [TextListElementComponent, ImageDisplayAll01Component, CarouselComponent, TextComponent, ImageCalculatorDirective, TableComponent, CommonModule, LowerLeftCardComponent, UpperRightCardComponent, RouterLink, RouterLink, PlayButtonComponent],
+    templateUrl: './content.component.html',
+    styleUrl: './content.component.css',
+    encapsulation: ViewEncapsulation.None
 })
 export class ContentComponent {
   content = input<ContentModel>();

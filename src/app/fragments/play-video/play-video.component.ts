@@ -3,12 +3,11 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { ProjectSecctionModel } from 'src/app/models/project/project-secction.model';
 
 @Component({
-  selector: 'app-play-video',
-  standalone: true,
-  imports: [],
-  templateUrl: './play-video.component.html',
-  styleUrl: './play-video.component.css',
-  encapsulation: ViewEncapsulation.None
+    selector: 'app-play-video',
+    imports: [],
+    templateUrl: './play-video.component.html',
+    styleUrl: './play-video.component.css',
+    encapsulation: ViewEncapsulation.None
 })
 export class PlayVideoComponent {
   urlSafe!: SafeResourceUrl;
